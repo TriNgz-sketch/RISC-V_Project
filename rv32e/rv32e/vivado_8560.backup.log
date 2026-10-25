@@ -1,0 +1,2099 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 17 15:18:20 2026
+# Process ID: 8560
+# Current directory: C:/Users/Admin/Desktop/da1/rv32e
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10888 C:\Users\Admin\Desktop\da1\rv32e\rv32e.xpr
+# Log file: C:/Users/Admin/Desktop/da1/rv32e/vivado.log
+# Journal file: C:/Users/Admin/Desktop/da1/rv32e\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/da1/rv32e/rv32e.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 664.828 ; gain = 76.086
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+D:/vivado/Vivado/2018.3/tps/mingw/6.2.0/win64.o/nt/bin/../lib/gcc/x86_64-w64-mingw32/6.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file xsim.dir/tb_rv32e_mcu_behav/xsimk.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s) while executing 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:48]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:137]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:176]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:178]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:182]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:184]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:202]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_mcu
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3356]  Could not open file xsim.dir/tb_rv32e_mcu_behav/xsim.type for writing.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 15:21:49 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jun 17 15:22:52 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1084.477 ; gain = 1.535
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1084.477 ; gain = 1.535
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1084.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1213.203 ; gain = 407.312
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:48]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:137]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:176]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:178]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:182]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:184]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:202]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_mcu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.rv32e_cpu
+Compiling module xil_defaultlib.rv32e_mcu
+Compiling module xil_defaultlib.tb_rv32e_mcu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rv32e_mcu_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/xsim.dir/tb_rv32e_mcu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 17 15:26:49 2026...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1728.516 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rv32e_mcu_behav -key {Behavioral:sim_1:Functional:tb_rv32e_mcu} -tclbatch {tb_rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+source tb_rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[SYSTEM] Dang Reset toan bo he thong...
+Time=0ns | PC=0x00000000 | LED_Out=0x00
+[SYSTEM] He thong bat dau hoat dong.
+[TEST 1] Cho ngat tu TIMER (Sau 500 chu ky)...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rv32e_mcu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1861.418 ; gain = 132.902
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+[SYSTEM] Dang Reset toan bo he thong...
+Time=0ns | PC=0x00000000 | LED_Out=0x00
+[SYSTEM] He thong bat dau hoat dong.
+[TEST 1] Cho ngat tu TIMER (Sau 500 chu ky)...
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1880.230 ; gain = 0.000
+run 10 us
+Time=5015ns | PC=0x00000080 | LED_Out=0x00
+Time=5025ns | PC=0x00000084 | LED_Out=0x00
+Time=5035ns | PC=0x00000088 | LED_Out=0x00
+Time=5045ns | PC=0x0000008c | LED_Out=0x00
+Time=5055ns | PC=0x00000090 | LED_Out=0x00
+Time=5065ns | PC=0x00000094 | LED_Out=0x00
+Time=5075ns | PC=0x00000098 | LED_Out=0x00
+Time=5085ns | PC=0x0000009c | LED_Out=0x00
+Time=5095ns | PC=0x000000a0 | LED_Out=0x00
+Time=5105ns | PC=0x000000a4 | LED_Out=0x00
+Time=5115ns | PC=0x000000a8 | LED_Out=0x00
+Time=5125ns | PC=0x000000ac | LED_Out=0x00
+Time=5135ns | PC=0x000000b0 | LED_Out=0x00
+Time=5145ns | PC=0x000000b4 | LED_Out=0x00
+Time=5155ns | PC=0x000000b8 | LED_Out=0x00
+Time=5165ns | PC=0x000000bc | LED_Out=0x00
+Time=5175ns | PC=0x000000c0 | LED_Out=0x00
+Time=5185ns | PC=0x000000c4 | LED_Out=0x00
+Time=5195ns | PC=0x000000c8 | LED_Out=0x00
+Time=5205ns | PC=0x000000cc | LED_Out=0x00
+Time=5215ns | PC=0x000000d0 | LED_Out=0x00
+Time=5225ns | PC=0x000000d4 | LED_Out=0x00
+Time=5235ns | PC=0x000000d8 | LED_Out=0x00
+Time=5245ns | PC=0x000000dc | LED_Out=0x00
+Time=5255ns | PC=0x000000e0 | LED_Out=0x00
+Time=5265ns | PC=0x000000e4 | LED_Out=0x00
+Time=5275ns | PC=0x000000e8 | LED_Out=0x00
+Time=5285ns | PC=0x000000ec | LED_Out=0x00
+Time=5295ns | PC=0x000000f0 | LED_Out=0x00
+Time=5305ns | PC=0x000000f4 | LED_Out=0x00
+Time=5315ns | PC=0x000000f8 | LED_Out=0x00
+Time=5325ns | PC=0x000000fc | LED_Out=0x00
+Time=5335ns | PC=0x00000100 | LED_Out=0x00
+Time=5345ns | PC=0x00000104 | LED_Out=0x00
+Time=5355ns | PC=0x00000108 | LED_Out=0x00
+Time=5365ns | PC=0x0000010c | LED_Out=0x00
+Time=5375ns | PC=0x00000110 | LED_Out=0x00
+Time=5385ns | PC=0x00000114 | LED_Out=0x00
+Time=5395ns | PC=0x00000118 | LED_Out=0x00
+Time=5405ns | PC=0x0000011c | LED_Out=0x00
+Time=5415ns | PC=0x00000120 | LED_Out=0x00
+Time=5425ns | PC=0x00000124 | LED_Out=0x00
+Time=5435ns | PC=0x00000128 | LED_Out=0x00
+Time=5445ns | PC=0x0000012c | LED_Out=0x00
+Time=5455ns | PC=0x00000130 | LED_Out=0x00
+Time=5465ns | PC=0x00000134 | LED_Out=0x00
+Time=5475ns | PC=0x00000138 | LED_Out=0x00
+Time=5485ns | PC=0x0000013c | LED_Out=0x00
+Time=5495ns | PC=0x00000140 | LED_Out=0x00
+Time=5505ns | PC=0x00000144 | LED_Out=0x00
+Time=5515ns | PC=0x00000148 | LED_Out=0x00
+Time=5525ns | PC=0x0000014c | LED_Out=0x00
+Time=5535ns | PC=0x00000150 | LED_Out=0x00
+Time=5545ns | PC=0x00000154 | LED_Out=0x00
+Time=5555ns | PC=0x00000158 | LED_Out=0x00
+Time=5565ns | PC=0x0000015c | LED_Out=0x00
+Time=5575ns | PC=0x00000160 | LED_Out=0x00
+Time=5585ns | PC=0x00000164 | LED_Out=0x00
+Time=5595ns | PC=0x00000168 | LED_Out=0x00
+Time=5605ns | PC=0x0000016c | LED_Out=0x00
+Time=5615ns | PC=0x00000170 | LED_Out=0x00
+Time=5625ns | PC=0x00000174 | LED_Out=0x00
+Time=5635ns | PC=0x00000178 | LED_Out=0x00
+Time=5645ns | PC=0x0000017c | LED_Out=0x00
+Time=5655ns | PC=0x00000180 | LED_Out=0x00
+Time=5665ns | PC=0x00000184 | LED_Out=0x00
+Time=5675ns | PC=0x00000188 | LED_Out=0x00
+Time=5685ns | PC=0x0000018c | LED_Out=0x00
+Time=5695ns | PC=0x00000190 | LED_Out=0x00
+Time=5705ns | PC=0x00000194 | LED_Out=0x00
+Time=5715ns | PC=0x00000198 | LED_Out=0x00
+Time=5725ns | PC=0x0000019c | LED_Out=0x00
+Time=5735ns | PC=0x000001a0 | LED_Out=0x00
+Time=5745ns | PC=0x000001a4 | LED_Out=0x00
+Time=5755ns | PC=0x000001a8 | LED_Out=0x00
+Time=5765ns | PC=0x000001ac | LED_Out=0x00
+Time=5775ns | PC=0x000001b0 | LED_Out=0x00
+Time=5785ns | PC=0x000001b4 | LED_Out=0x00
+Time=5795ns | PC=0x000001b8 | LED_Out=0x00
+Time=5805ns | PC=0x000001bc | LED_Out=0x00
+Time=5815ns | PC=0x000001c0 | LED_Out=0x00
+Time=5825ns | PC=0x000001c4 | LED_Out=0x00
+Time=5835ns | PC=0x000001c8 | LED_Out=0x00
+Time=5845ns | PC=0x000001cc | LED_Out=0x00
+Time=5855ns | PC=0x000001d0 | LED_Out=0x00
+Time=5865ns | PC=0x000001d4 | LED_Out=0x00
+Time=5875ns | PC=0x000001d8 | LED_Out=0x00
+Time=5885ns | PC=0x000001dc | LED_Out=0x00
+Time=5895ns | PC=0x000001e0 | LED_Out=0x00
+Time=5905ns | PC=0x000001e4 | LED_Out=0x00
+Time=5915ns | PC=0x000001e8 | LED_Out=0x00
+Time=5925ns | PC=0x000001ec | LED_Out=0x00
+Time=5935ns | PC=0x000001f0 | LED_Out=0x00
+Time=5945ns | PC=0x000001f4 | LED_Out=0x00
+Time=5955ns | PC=0x000001f8 | LED_Out=0x00
+Time=5965ns | PC=0x000001fc | LED_Out=0x00
+Time=5975ns | PC=0x00000200 | LED_Out=0x00
+Time=5985ns | PC=0x00000204 | LED_Out=0x00
+Time=5995ns | PC=0x00000208 | LED_Out=0x00
+Time=6005ns | PC=0x0000020c | LED_Out=0x00
+Time=6015ns | PC=0x00000210 | LED_Out=0x00
+[TEST 2] Kich hoat Ngat ngoai (External IRQ)...
+Time=6025ns | PC=0x00000214 | LED_Out=0x00
+Time=6035ns | PC=0x00000080 | LED_Out=0x00
+[TEST 2] Da tat Ngat ngoai.
+Time=6055ns | PC=0x00000084 | LED_Out=0x00
+Time=6065ns | PC=0x00000088 | LED_Out=0x00
+Time=6075ns | PC=0x0000008c | LED_Out=0x00
+Time=6085ns | PC=0x00000090 | LED_Out=0x00
+Time=6095ns | PC=0x00000094 | LED_Out=0x00
+Time=6105ns | PC=0x00000098 | LED_Out=0x00
+Time=6115ns | PC=0x0000009c | LED_Out=0x00
+Time=6125ns | PC=0x000000a0 | LED_Out=0x00
+Time=6135ns | PC=0x000000a4 | LED_Out=0x00
+[TEST 3] Thu nghiem truyen nhan UART RX...
+Time=6145ns | PC=0x000000a8 | LED_Out=0x00
+Time=6155ns | PC=0x000000ac | LED_Out=0x00
+Time=6165ns | PC=0x000000b0 | LED_Out=0x00
+Time=6175ns | PC=0x000000b4 | LED_Out=0x00
+Time=6185ns | PC=0x000000b8 | LED_Out=0x00
+Time=6195ns | PC=0x000000bc | LED_Out=0x00
+Time=6205ns | PC=0x000000c0 | LED_Out=0x00
+Time=6215ns | PC=0x000000c4 | LED_Out=0x00
+Time=6225ns | PC=0x000000c8 | LED_Out=0x00
+Time=6235ns | PC=0x000000cc | LED_Out=0x00
+[UART_RX] Bat dau gui byte: 0xa5 toi MCU
+Time=6245ns | PC=0x000000d0 | LED_Out=0x00
+Time=6255ns | PC=0x000000d4 | LED_Out=0x00
+Time=6265ns | PC=0x000000d8 | LED_Out=0x00
+Time=6275ns | PC=0x000000dc | LED_Out=0x00
+Time=6285ns | PC=0x000000e0 | LED_Out=0x00
+Time=6295ns | PC=0x000000e4 | LED_Out=0x00
+Time=6305ns | PC=0x000000e8 | LED_Out=0x00
+Time=6315ns | PC=0x000000ec | LED_Out=0x00
+Time=6325ns | PC=0x000000f0 | LED_Out=0x00
+Time=6335ns | PC=0x000000f4 | LED_Out=0x00
+Time=6345ns | PC=0x000000f8 | LED_Out=0x00
+Time=6355ns | PC=0x000000fc | LED_Out=0x00
+Time=6365ns | PC=0x00000100 | LED_Out=0x00
+Time=6375ns | PC=0x00000104 | LED_Out=0x00
+Time=6385ns | PC=0x00000108 | LED_Out=0x00
+Time=6395ns | PC=0x0000010c | LED_Out=0x00
+Time=6405ns | PC=0x00000110 | LED_Out=0x00
+Time=6415ns | PC=0x00000114 | LED_Out=0x00
+Time=6425ns | PC=0x00000118 | LED_Out=0x00
+Time=6435ns | PC=0x0000011c | LED_Out=0x00
+Time=6445ns | PC=0x00000120 | LED_Out=0x00
+Time=6455ns | PC=0x00000124 | LED_Out=0x00
+Time=6465ns | PC=0x00000128 | LED_Out=0x00
+Time=6475ns | PC=0x0000012c | LED_Out=0x00
+Time=6485ns | PC=0x00000130 | LED_Out=0x00
+Time=6495ns | PC=0x00000134 | LED_Out=0x00
+Time=6505ns | PC=0x00000138 | LED_Out=0x00
+Time=6515ns | PC=0x0000013c | LED_Out=0x00
+Time=6525ns | PC=0x00000140 | LED_Out=0x00
+Time=6535ns | PC=0x00000144 | LED_Out=0x00
+Time=6545ns | PC=0x00000148 | LED_Out=0x00
+Time=6555ns | PC=0x0000014c | LED_Out=0x00
+Time=6565ns | PC=0x00000150 | LED_Out=0x00
+Time=6575ns | PC=0x00000154 | LED_Out=0x00
+Time=6585ns | PC=0x00000158 | LED_Out=0x00
+Time=6595ns | PC=0x0000015c | LED_Out=0x00
+Time=6605ns | PC=0x00000160 | LED_Out=0x00
+Time=6615ns | PC=0x00000164 | LED_Out=0x00
+Time=6625ns | PC=0x00000168 | LED_Out=0x00
+Time=6635ns | PC=0x0000016c | LED_Out=0x00
+Time=6645ns | PC=0x00000170 | LED_Out=0x00
+Time=6655ns | PC=0x00000174 | LED_Out=0x00
+Time=6665ns | PC=0x00000178 | LED_Out=0x00
+Time=6675ns | PC=0x0000017c | LED_Out=0x00
+Time=6685ns | PC=0x00000180 | LED_Out=0x00
+Time=6695ns | PC=0x00000184 | LED_Out=0x00
+Time=6705ns | PC=0x00000188 | LED_Out=0x00
+Time=6715ns | PC=0x0000018c | LED_Out=0x00
+Time=6725ns | PC=0x00000190 | LED_Out=0x00
+Time=6735ns | PC=0x00000194 | LED_Out=0x00
+Time=6745ns | PC=0x00000198 | LED_Out=0x00
+Time=6755ns | PC=0x0000019c | LED_Out=0x00
+Time=6765ns | PC=0x000001a0 | LED_Out=0x00
+Time=6775ns | PC=0x000001a4 | LED_Out=0x00
+Time=6785ns | PC=0x000001a8 | LED_Out=0x00
+Time=6795ns | PC=0x000001ac | LED_Out=0x00
+Time=6805ns | PC=0x000001b0 | LED_Out=0x00
+Time=6815ns | PC=0x000001b4 | LED_Out=0x00
+Time=6825ns | PC=0x000001b8 | LED_Out=0x00
+Time=6835ns | PC=0x000001bc | LED_Out=0x00
+Time=6845ns | PC=0x000001c0 | LED_Out=0x00
+Time=6855ns | PC=0x000001c4 | LED_Out=0x00
+Time=6865ns | PC=0x000001c8 | LED_Out=0x00
+Time=6875ns | PC=0x000001cc | LED_Out=0x00
+Time=6885ns | PC=0x000001d0 | LED_Out=0x00
+Time=6895ns | PC=0x000001d4 | LED_Out=0x00
+Time=6905ns | PC=0x000001d8 | LED_Out=0x00
+Time=6915ns | PC=0x000001dc | LED_Out=0x00
+Time=6925ns | PC=0x000001e0 | LED_Out=0x00
+Time=6935ns | PC=0x000001e4 | LED_Out=0x00
+Time=6945ns | PC=0x000001e8 | LED_Out=0x00
+Time=6955ns | PC=0x000001ec | LED_Out=0x00
+Time=6965ns | PC=0x000001f0 | LED_Out=0x00
+Time=6975ns | PC=0x000001f4 | LED_Out=0x00
+Time=6985ns | PC=0x000001f8 | LED_Out=0x00
+Time=6995ns | PC=0x000001fc | LED_Out=0x00
+Time=7005ns | PC=0x00000200 | LED_Out=0x00
+Time=7015ns | PC=0x00000204 | LED_Out=0x00
+Time=7025ns | PC=0x00000208 | LED_Out=0x00
+Time=7035ns | PC=0x0000020c | LED_Out=0x00
+Time=7045ns | PC=0x00000210 | LED_Out=0x00
+Time=7055ns | PC=0x00000214 | LED_Out=0x00
+Time=7065ns | PC=0x00000218 | LED_Out=0x00
+Time=7075ns | PC=0x0000021c | LED_Out=0x00
+Time=7085ns | PC=0x00000220 | LED_Out=0x00
+Time=7095ns | PC=0x00000224 | LED_Out=0x00
+Time=7105ns | PC=0x00000228 | LED_Out=0x00
+Time=7115ns | PC=0x0000022c | LED_Out=0x00
+Time=7125ns | PC=0x00000230 | LED_Out=0x00
+Time=7135ns | PC=0x00000234 | LED_Out=0x00
+Time=7145ns | PC=0x00000238 | LED_Out=0x00
+Time=7155ns | PC=0x0000023c | LED_Out=0x00
+Time=7165ns | PC=0x00000240 | LED_Out=0x00
+Time=7175ns | PC=0x00000244 | LED_Out=0x00
+Time=7185ns | PC=0x00000248 | LED_Out=0x00
+Time=7195ns | PC=0x0000024c | LED_Out=0x00
+Time=7205ns | PC=0x00000250 | LED_Out=0x00
+Time=7215ns | PC=0x00000254 | LED_Out=0x00
+Time=7225ns | PC=0x00000258 | LED_Out=0x00
+Time=7235ns | PC=0x0000025c | LED_Out=0x00
+Time=7245ns | PC=0x00000260 | LED_Out=0x00
+Time=7255ns | PC=0x00000264 | LED_Out=0x00
+Time=7265ns | PC=0x00000268 | LED_Out=0x00
+Time=7275ns | PC=0x0000026c | LED_Out=0x00
+Time=7285ns | PC=0x00000270 | LED_Out=0x00
+Time=7295ns | PC=0x00000274 | LED_Out=0x00
+Time=7305ns | PC=0x00000278 | LED_Out=0x00
+Time=7315ns | PC=0x0000027c | LED_Out=0x00
+Time=7325ns | PC=0x00000280 | LED_Out=0x00
+Time=7335ns | PC=0x00000284 | LED_Out=0x00
+Time=7345ns | PC=0x00000288 | LED_Out=0x00
+Time=7355ns | PC=0x0000028c | LED_Out=0x00
+Time=7365ns | PC=0x00000290 | LED_Out=0x00
+Time=7375ns | PC=0x00000294 | LED_Out=0x00
+Time=7385ns | PC=0x00000298 | LED_Out=0x00
+Time=7395ns | PC=0x0000029c | LED_Out=0x00
+Time=7405ns | PC=0x000002a0 | LED_Out=0x00
+Time=7415ns | PC=0x000002a4 | LED_Out=0x00
+Time=7425ns | PC=0x000002a8 | LED_Out=0x00
+Time=7435ns | PC=0x000002ac | LED_Out=0x00
+Time=7445ns | PC=0x000002b0 | LED_Out=0x00
+Time=7455ns | PC=0x000002b4 | LED_Out=0x00
+Time=7465ns | PC=0x000002b8 | LED_Out=0x00
+Time=7475ns | PC=0x000002bc | LED_Out=0x00
+Time=7485ns | PC=0x000002c0 | LED_Out=0x00
+Time=7495ns | PC=0x000002c4 | LED_Out=0x00
+Time=7505ns | PC=0x000002c8 | LED_Out=0x00
+Time=7515ns | PC=0x000002cc | LED_Out=0x00
+Time=7525ns | PC=0x000002d0 | LED_Out=0x00
+Time=7535ns | PC=0x000002d4 | LED_Out=0x00
+Time=7545ns | PC=0x000002d8 | LED_Out=0x00
+Time=7555ns | PC=0x000002dc | LED_Out=0x00
+Time=7565ns | PC=0x000002e0 | LED_Out=0x00
+Time=7575ns | PC=0x000002e4 | LED_Out=0x00
+Time=7585ns | PC=0x000002e8 | LED_Out=0x00
+Time=7595ns | PC=0x000002ec | LED_Out=0x00
+Time=7605ns | PC=0x000002f0 | LED_Out=0x00
+Time=7615ns | PC=0x000002f4 | LED_Out=0x00
+Time=7625ns | PC=0x000002f8 | LED_Out=0x00
+Time=7635ns | PC=0x000002fc | LED_Out=0x00
+Time=7645ns | PC=0x00000300 | LED_Out=0x00
+Time=7655ns | PC=0x00000304 | LED_Out=0x00
+Time=7665ns | PC=0x00000308 | LED_Out=0x00
+Time=7675ns | PC=0x0000030c | LED_Out=0x00
+Time=7685ns | PC=0x00000310 | LED_Out=0x00
+Time=7695ns | PC=0x00000314 | LED_Out=0x00
+Time=7705ns | PC=0x00000318 | LED_Out=0x00
+Time=7715ns | PC=0x0000031c | LED_Out=0x00
+Time=7725ns | PC=0x00000320 | LED_Out=0x00
+Time=7735ns | PC=0x00000324 | LED_Out=0x00
+Time=7745ns | PC=0x00000328 | LED_Out=0x00
+Time=7755ns | PC=0x0000032c | LED_Out=0x00
+Time=7765ns | PC=0x00000330 | LED_Out=0x00
+Time=7775ns | PC=0x00000334 | LED_Out=0x00
+Time=7785ns | PC=0x00000338 | LED_Out=0x00
+Time=7795ns | PC=0x0000033c | LED_Out=0x00
+Time=7805ns | PC=0x00000340 | LED_Out=0x00
+Time=7815ns | PC=0x00000344 | LED_Out=0x00
+Time=7825ns | PC=0x00000348 | LED_Out=0x00
+Time=7835ns | PC=0x0000034c | LED_Out=0x00
+Time=7845ns | PC=0x00000350 | LED_Out=0x00
+Time=7855ns | PC=0x00000354 | LED_Out=0x00
+Time=7865ns | PC=0x00000358 | LED_Out=0x00
+Time=7875ns | PC=0x0000035c | LED_Out=0x00
+Time=7885ns | PC=0x00000360 | LED_Out=0x00
+Time=7895ns | PC=0x00000364 | LED_Out=0x00
+Time=7905ns | PC=0x00000368 | LED_Out=0x00
+Time=7915ns | PC=0x0000036c | LED_Out=0x00
+Time=7925ns | PC=0x00000370 | LED_Out=0x00
+Time=7935ns | PC=0x00000374 | LED_Out=0x00
+Time=7945ns | PC=0x00000378 | LED_Out=0x00
+Time=7955ns | PC=0x0000037c | LED_Out=0x00
+Time=7965ns | PC=0x00000380 | LED_Out=0x00
+Time=7975ns | PC=0x00000384 | LED_Out=0x00
+Time=7985ns | PC=0x00000388 | LED_Out=0x00
+Time=7995ns | PC=0x0000038c | LED_Out=0x00
+Time=8005ns | PC=0x00000390 | LED_Out=0x00
+Time=8015ns | PC=0x00000394 | LED_Out=0x00
+Time=8025ns | PC=0x00000398 | LED_Out=0x00
+Time=8035ns | PC=0x0000039c | LED_Out=0x00
+Time=8045ns | PC=0x000003a0 | LED_Out=0x00
+Time=8055ns | PC=0x000003a4 | LED_Out=0x00
+Time=8065ns | PC=0x000003a8 | LED_Out=0x00
+Time=8075ns | PC=0x000003ac | LED_Out=0x00
+Time=8085ns | PC=0x000003b0 | LED_Out=0x00
+Time=8095ns | PC=0x000003b4 | LED_Out=0x00
+Time=8105ns | PC=0x000003b8 | LED_Out=0x00
+Time=8115ns | PC=0x000003bc | LED_Out=0x00
+Time=8125ns | PC=0x000003c0 | LED_Out=0x00
+Time=8135ns | PC=0x000003c4 | LED_Out=0x00
+Time=8145ns | PC=0x000003c8 | LED_Out=0x00
+Time=8155ns | PC=0x000003cc | LED_Out=0x00
+Time=8165ns | PC=0x000003d0 | LED_Out=0x00
+Time=8175ns | PC=0x000003d4 | LED_Out=0x00
+Time=8185ns | PC=0x000003d8 | LED_Out=0x00
+Time=8195ns | PC=0x000003dc | LED_Out=0x00
+Time=8205ns | PC=0x000003e0 | LED_Out=0x00
+Time=8215ns | PC=0x000003e4 | LED_Out=0x00
+Time=8225ns | PC=0x000003e8 | LED_Out=0x00
+Time=8235ns | PC=0x000003ec | LED_Out=0x00
+Time=8245ns | PC=0x000003f0 | LED_Out=0x00
+Time=8255ns | PC=0x000003f4 | LED_Out=0x00
+Time=8265ns | PC=0x000003f8 | LED_Out=0x00
+Time=8275ns | PC=0x000003fc | LED_Out=0x00
+Time=8285ns | PC=0x00000400 | LED_Out=0x00
+Time=8295ns | PC=0x00000404 | LED_Out=0x00
+Time=8305ns | PC=0x00000408 | LED_Out=0x00
+Time=8315ns | PC=0x0000040c | LED_Out=0x00
+Time=8325ns | PC=0x00000410 | LED_Out=0x00
+Time=8335ns | PC=0x00000414 | LED_Out=0x0a
+Time=8345ns | PC=0x00000418 | LED_Out=0x0a
+Time=8365ns | PC=0x0000041c | LED_Out=0x0a
+Time=8375ns | PC=0x0000041c | LED_Out=0x0f
+Time=8385ns | PC=0x00000420 | LED_Out=0x0f
+Time=8395ns | PC=0x00000424 | LED_Out=0x0f
+Time=10025ns | PC=0x00000080 | LED_Out=0x0f
+Time=10035ns | PC=0x00000084 | LED_Out=0x0f
+Time=10045ns | PC=0x00000088 | LED_Out=0x0f
+Time=10055ns | PC=0x0000008c | LED_Out=0x0f
+Time=10065ns | PC=0x00000090 | LED_Out=0x0f
+Time=10075ns | PC=0x00000094 | LED_Out=0x0f
+Time=10085ns | PC=0x00000098 | LED_Out=0x0f
+Time=10095ns | PC=0x0000009c | LED_Out=0x0f
+Time=10105ns | PC=0x000000a0 | LED_Out=0x0f
+Time=10115ns | PC=0x000000a4 | LED_Out=0x0f
+Time=10125ns | PC=0x000000a8 | LED_Out=0x0f
+Time=10135ns | PC=0x000000ac | LED_Out=0x0f
+Time=10145ns | PC=0x000000b0 | LED_Out=0x0f
+Time=10155ns | PC=0x000000b4 | LED_Out=0x0f
+Time=10165ns | PC=0x000000b8 | LED_Out=0x0f
+Time=10175ns | PC=0x000000bc | LED_Out=0x0f
+Time=10185ns | PC=0x000000c0 | LED_Out=0x0f
+Time=10195ns | PC=0x000000c4 | LED_Out=0x0f
+Time=10205ns | PC=0x000000c8 | LED_Out=0x0f
+Time=10215ns | PC=0x000000cc | LED_Out=0x0f
+Time=10225ns | PC=0x000000d0 | LED_Out=0x0f
+Time=10235ns | PC=0x000000d4 | LED_Out=0x0f
+Time=10245ns | PC=0x000000d8 | LED_Out=0x0f
+Time=10255ns | PC=0x000000dc | LED_Out=0x0f
+Time=10265ns | PC=0x000000e0 | LED_Out=0x0f
+Time=10275ns | PC=0x000000e4 | LED_Out=0x0f
+Time=10285ns | PC=0x000000e8 | LED_Out=0x0f
+Time=10295ns | PC=0x000000ec | LED_Out=0x0f
+Time=10305ns | PC=0x000000f0 | LED_Out=0x0f
+Time=10315ns | PC=0x000000f4 | LED_Out=0x0f
+Time=10325ns | PC=0x000000f8 | LED_Out=0x0f
+Time=10335ns | PC=0x000000fc | LED_Out=0x0f
+Time=10345ns | PC=0x00000100 | LED_Out=0x0f
+Time=10355ns | PC=0x00000104 | LED_Out=0x0f
+Time=10365ns | PC=0x00000108 | LED_Out=0x0f
+Time=10375ns | PC=0x0000010c | LED_Out=0x0f
+Time=10385ns | PC=0x00000110 | LED_Out=0x0f
+Time=10395ns | PC=0x00000114 | LED_Out=0x0f
+Time=10405ns | PC=0x00000118 | LED_Out=0x0f
+Time=10415ns | PC=0x0000011c | LED_Out=0x0f
+Time=10425ns | PC=0x00000120 | LED_Out=0x0f
+Time=10435ns | PC=0x00000124 | LED_Out=0x0f
+Time=10445ns | PC=0x00000128 | LED_Out=0x0f
+Time=10455ns | PC=0x0000012c | LED_Out=0x0f
+Time=10465ns | PC=0x00000130 | LED_Out=0x0f
+Time=10475ns | PC=0x00000134 | LED_Out=0x0f
+Time=10485ns | PC=0x00000138 | LED_Out=0x0f
+Time=10495ns | PC=0x0000013c | LED_Out=0x0f
+Time=10505ns | PC=0x00000140 | LED_Out=0x0f
+Time=10515ns | PC=0x00000144 | LED_Out=0x0f
+Time=10525ns | PC=0x00000148 | LED_Out=0x0f
+Time=10535ns | PC=0x0000014c | LED_Out=0x0f
+Time=10545ns | PC=0x00000150 | LED_Out=0x0f
+Time=10555ns | PC=0x00000154 | LED_Out=0x0f
+Time=10565ns | PC=0x00000158 | LED_Out=0x0f
+Time=10575ns | PC=0x0000015c | LED_Out=0x0f
+Time=10585ns | PC=0x00000160 | LED_Out=0x0f
+Time=10595ns | PC=0x00000164 | LED_Out=0x0f
+Time=10605ns | PC=0x00000168 | LED_Out=0x0f
+Time=10615ns | PC=0x0000016c | LED_Out=0x0f
+Time=10625ns | PC=0x00000170 | LED_Out=0x0f
+Time=10635ns | PC=0x00000174 | LED_Out=0x0f
+Time=10645ns | PC=0x00000178 | LED_Out=0x0f
+Time=10655ns | PC=0x0000017c | LED_Out=0x0f
+Time=10665ns | PC=0x00000180 | LED_Out=0x0f
+Time=10675ns | PC=0x00000184 | LED_Out=0x0f
+Time=10685ns | PC=0x00000188 | LED_Out=0x0f
+Time=10695ns | PC=0x0000018c | LED_Out=0x0f
+Time=10705ns | PC=0x00000190 | LED_Out=0x0f
+Time=10715ns | PC=0x00000194 | LED_Out=0x0f
+Time=10725ns | PC=0x00000198 | LED_Out=0x0f
+Time=10735ns | PC=0x0000019c | LED_Out=0x0f
+Time=10745ns | PC=0x000001a0 | LED_Out=0x0f
+Time=10755ns | PC=0x000001a4 | LED_Out=0x0f
+Time=10765ns | PC=0x000001a8 | LED_Out=0x0f
+Time=10775ns | PC=0x000001ac | LED_Out=0x0f
+Time=10785ns | PC=0x000001b0 | LED_Out=0x0f
+Time=10795ns | PC=0x000001b4 | LED_Out=0x0f
+Time=10805ns | PC=0x000001b8 | LED_Out=0x0f
+Time=10815ns | PC=0x000001bc | LED_Out=0x0f
+Time=10825ns | PC=0x000001c0 | LED_Out=0x0f
+Time=10835ns | PC=0x000001c4 | LED_Out=0x0f
+Time=10845ns | PC=0x000001c8 | LED_Out=0x0f
+Time=10855ns | PC=0x000001cc | LED_Out=0x0f
+Time=10865ns | PC=0x000001d0 | LED_Out=0x0f
+Time=10875ns | PC=0x000001d4 | LED_Out=0x0f
+Time=10885ns | PC=0x000001d8 | LED_Out=0x0f
+Time=10895ns | PC=0x000001dc | LED_Out=0x0f
+Time=10905ns | PC=0x000001e0 | LED_Out=0x0f
+Time=10915ns | PC=0x000001e4 | LED_Out=0x0f
+Time=10925ns | PC=0x000001e8 | LED_Out=0x0f
+Time=10935ns | PC=0x000001ec | LED_Out=0x0f
+Time=10945ns | PC=0x000001f0 | LED_Out=0x0f
+Time=10955ns | PC=0x000001f4 | LED_Out=0x0f
+Time=10965ns | PC=0x000001f8 | LED_Out=0x0f
+Time=10975ns | PC=0x000001fc | LED_Out=0x0f
+Time=10985ns | PC=0x00000200 | LED_Out=0x0f
+Time=10995ns | PC=0x00000204 | LED_Out=0x0f
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 15:36:10 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 15:36:34 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jun 17 15:37:44 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1917.711 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1917.711 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2048.664 ; gain = 144.047
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:318]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:53]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:142]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:181]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:183]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:187]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:189]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:200]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:207]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_mcu
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.rv32e_cpu
+Compiling module xil_defaultlib.rv32e_mcu
+Compiling module xil_defaultlib.tb_rv32e_mcu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rv32e_mcu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rv32e_mcu_behav -key {Behavioral:sim_1:Functional:tb_rv32e_mcu} -tclbatch {tb_rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+source tb_rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[SYSTEM] Dang Reset toan bo he thong...
+Time=0ns | PC=0x00000000 | LED_Out=0x00
+[SYSTEM] He thong bat dau hoat dong.
+[TEST 1] Cho ngat tu TIMER (Sau 500 chu ky)...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rv32e_mcu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2386.148 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:318]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:53]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:142]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:181]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:183]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:187]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:189]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:200]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:207]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_mcu
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.rv32e_cpu
+Compiling module xil_defaultlib.rv32e_mcu
+Compiling module xil_defaultlib.tb_rv32e_mcu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rv32e_mcu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+[SYSTEM] Dang Reset toan bo he thong...
+Time=0ns | PC=0x00000000 | LED_Out=0x00
+[SYSTEM] He thong bat dau hoat dong.
+[TEST 1] Cho ngat tu TIMER (Sau 500 chu ky)...
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2386.148 ; gain = 0.000
+run 10 us
+Time=5015ns | PC=0x00000080 | LED_Out=0x00
+Time=5025ns | PC=0x00000084 | LED_Out=0x00
+Time=5035ns | PC=0x00000088 | LED_Out=0x00
+Time=5045ns | PC=0x0000008c | LED_Out=0x00
+Time=5055ns | PC=0x00000090 | LED_Out=0x00
+Time=5065ns | PC=0x00000094 | LED_Out=0x00
+Time=5075ns | PC=0x00000098 | LED_Out=0x00
+Time=5085ns | PC=0x0000009c | LED_Out=0x00
+Time=5095ns | PC=0x000000a0 | LED_Out=0x00
+Time=5105ns | PC=0x000000a4 | LED_Out=0x00
+Time=5115ns | PC=0x000000a8 | LED_Out=0x00
+Time=5125ns | PC=0x000000ac | LED_Out=0x00
+Time=5135ns | PC=0x000000b0 | LED_Out=0x00
+Time=5145ns | PC=0x000000b4 | LED_Out=0x00
+Time=5155ns | PC=0x000000b8 | LED_Out=0x00
+Time=5165ns | PC=0x000000bc | LED_Out=0x00
+Time=5175ns | PC=0x000000c0 | LED_Out=0x00
+Time=5185ns | PC=0x000000c4 | LED_Out=0x00
+Time=5195ns | PC=0x000000c8 | LED_Out=0x00
+Time=5205ns | PC=0x000000cc | LED_Out=0x00
+Time=5215ns | PC=0x000000d0 | LED_Out=0x00
+Time=5225ns | PC=0x000000d4 | LED_Out=0x00
+Time=5235ns | PC=0x000000d8 | LED_Out=0x00
+Time=5245ns | PC=0x000000dc | LED_Out=0x00
+Time=5255ns | PC=0x000000e0 | LED_Out=0x00
+Time=5265ns | PC=0x000000e4 | LED_Out=0x00
+Time=5275ns | PC=0x000000e8 | LED_Out=0x00
+Time=5285ns | PC=0x000000ec | LED_Out=0x00
+Time=5295ns | PC=0x000000f0 | LED_Out=0x00
+Time=5305ns | PC=0x000000f4 | LED_Out=0x00
+Time=5315ns | PC=0x000000f8 | LED_Out=0x00
+Time=5325ns | PC=0x000000fc | LED_Out=0x00
+Time=5335ns | PC=0x00000100 | LED_Out=0x00
+Time=5345ns | PC=0x00000104 | LED_Out=0x00
+Time=5355ns | PC=0x00000108 | LED_Out=0x00
+Time=5365ns | PC=0x0000010c | LED_Out=0x00
+Time=5375ns | PC=0x00000110 | LED_Out=0x00
+Time=5385ns | PC=0x00000114 | LED_Out=0x00
+Time=5395ns | PC=0x00000118 | LED_Out=0x00
+Time=5405ns | PC=0x0000011c | LED_Out=0x00
+Time=5415ns | PC=0x00000120 | LED_Out=0x00
+Time=5425ns | PC=0x00000124 | LED_Out=0x00
+Time=5435ns | PC=0x00000128 | LED_Out=0x00
+Time=5445ns | PC=0x0000012c | LED_Out=0x00
+Time=5455ns | PC=0x00000130 | LED_Out=0x00
+Time=5465ns | PC=0x00000134 | LED_Out=0x00
+Time=5475ns | PC=0x00000138 | LED_Out=0x00
+Time=5485ns | PC=0x0000013c | LED_Out=0x00
+Time=5495ns | PC=0x00000140 | LED_Out=0x00
+Time=5505ns | PC=0x00000144 | LED_Out=0x00
+Time=5515ns | PC=0x00000148 | LED_Out=0x00
+Time=5525ns | PC=0x0000014c | LED_Out=0x00
+Time=5535ns | PC=0x00000150 | LED_Out=0x00
+Time=5545ns | PC=0x00000154 | LED_Out=0x00
+Time=5555ns | PC=0x00000158 | LED_Out=0x00
+Time=5565ns | PC=0x0000015c | LED_Out=0x00
+Time=5575ns | PC=0x00000160 | LED_Out=0x00
+Time=5585ns | PC=0x00000164 | LED_Out=0x00
+Time=5595ns | PC=0x00000168 | LED_Out=0x00
+Time=5605ns | PC=0x0000016c | LED_Out=0x00
+Time=5615ns | PC=0x00000170 | LED_Out=0x00
+Time=5625ns | PC=0x00000174 | LED_Out=0x00
+Time=5635ns | PC=0x00000178 | LED_Out=0x00
+Time=5645ns | PC=0x0000017c | LED_Out=0x00
+Time=5655ns | PC=0x00000180 | LED_Out=0x00
+Time=5665ns | PC=0x00000184 | LED_Out=0x00
+Time=5675ns | PC=0x00000188 | LED_Out=0x00
+Time=5685ns | PC=0x0000018c | LED_Out=0x00
+Time=5695ns | PC=0x00000190 | LED_Out=0x00
+Time=5705ns | PC=0x00000194 | LED_Out=0x00
+Time=5715ns | PC=0x00000198 | LED_Out=0x00
+Time=5725ns | PC=0x0000019c | LED_Out=0x00
+Time=5735ns | PC=0x000001a0 | LED_Out=0x00
+Time=5745ns | PC=0x000001a4 | LED_Out=0x00
+Time=5755ns | PC=0x000001a8 | LED_Out=0x00
+Time=5765ns | PC=0x000001ac | LED_Out=0x00
+Time=5775ns | PC=0x000001b0 | LED_Out=0x00
+Time=5785ns | PC=0x000001b4 | LED_Out=0x00
+Time=5795ns | PC=0x000001b8 | LED_Out=0x00
+Time=5805ns | PC=0x000001bc | LED_Out=0x00
+Time=5815ns | PC=0x000001c0 | LED_Out=0x00
+Time=5825ns | PC=0x000001c4 | LED_Out=0x00
+Time=5835ns | PC=0x000001c8 | LED_Out=0x00
+Time=5845ns | PC=0x000001cc | LED_Out=0x00
+Time=5855ns | PC=0x000001d0 | LED_Out=0x00
+Time=5865ns | PC=0x000001d4 | LED_Out=0x00
+Time=5875ns | PC=0x000001d8 | LED_Out=0x00
+Time=5885ns | PC=0x000001dc | LED_Out=0x00
+Time=5895ns | PC=0x000001e0 | LED_Out=0x00
+Time=5905ns | PC=0x000001e4 | LED_Out=0x00
+Time=5915ns | PC=0x000001e8 | LED_Out=0x00
+Time=5925ns | PC=0x000001ec | LED_Out=0x00
+Time=5935ns | PC=0x000001f0 | LED_Out=0x00
+Time=5945ns | PC=0x000001f4 | LED_Out=0x00
+Time=5955ns | PC=0x000001f8 | LED_Out=0x00
+Time=5965ns | PC=0x000001fc | LED_Out=0x00
+Time=5975ns | PC=0x00000200 | LED_Out=0x00
+Time=5985ns | PC=0x00000204 | LED_Out=0x00
+Time=5995ns | PC=0x00000208 | LED_Out=0x00
+Time=6005ns | PC=0x0000020c | LED_Out=0x00
+Time=6015ns | PC=0x00000210 | LED_Out=0x00
+[TEST 2] Kich hoat Ngat ngoai (External IRQ)...
+Time=6025ns | PC=0x00000214 | LED_Out=0x00
+Time=6035ns | PC=0x00000080 | LED_Out=0x00
+[TEST 2] Da tat Ngat ngoai.
+Time=6055ns | PC=0x00000084 | LED_Out=0x00
+Time=6065ns | PC=0x00000088 | LED_Out=0x00
+Time=6075ns | PC=0x0000008c | LED_Out=0x00
+Time=6085ns | PC=0x00000090 | LED_Out=0x00
+Time=6095ns | PC=0x00000094 | LED_Out=0x00
+Time=6105ns | PC=0x00000098 | LED_Out=0x00
+Time=6115ns | PC=0x0000009c | LED_Out=0x00
+Time=6125ns | PC=0x000000a0 | LED_Out=0x00
+Time=6135ns | PC=0x000000a4 | LED_Out=0x00
+[TEST 3] Thu nghiem truyen nhan UART RX...
+Time=6145ns | PC=0x000000a8 | LED_Out=0x00
+Time=6155ns | PC=0x000000ac | LED_Out=0x00
+Time=6165ns | PC=0x000000b0 | LED_Out=0x00
+Time=6175ns | PC=0x000000b4 | LED_Out=0x00
+Time=6185ns | PC=0x000000b8 | LED_Out=0x00
+Time=6195ns | PC=0x000000bc | LED_Out=0x00
+Time=6205ns | PC=0x000000c0 | LED_Out=0x00
+Time=6215ns | PC=0x000000c4 | LED_Out=0x00
+Time=6225ns | PC=0x000000c8 | LED_Out=0x00
+Time=6235ns | PC=0x000000cc | LED_Out=0x00
+[UART_RX] Bat dau gui byte: 0xa5 toi MCU
+Time=6245ns | PC=0x000000d0 | LED_Out=0x00
+Time=6255ns | PC=0x000000d4 | LED_Out=0x00
+Time=6265ns | PC=0x000000d8 | LED_Out=0x00
+Time=6275ns | PC=0x000000dc | LED_Out=0x00
+Time=6285ns | PC=0x000000e0 | LED_Out=0x00
+Time=6295ns | PC=0x000000e4 | LED_Out=0x00
+Time=6305ns | PC=0x000000e8 | LED_Out=0x00
+Time=6315ns | PC=0x000000ec | LED_Out=0x00
+Time=6325ns | PC=0x000000f0 | LED_Out=0x00
+Time=6335ns | PC=0x000000f4 | LED_Out=0x00
+Time=6345ns | PC=0x000000f8 | LED_Out=0x00
+Time=6355ns | PC=0x000000fc | LED_Out=0x00
+Time=6365ns | PC=0x00000100 | LED_Out=0x00
+Time=6375ns | PC=0x00000104 | LED_Out=0x00
+Time=6385ns | PC=0x00000108 | LED_Out=0x00
+Time=6395ns | PC=0x0000010c | LED_Out=0x00
+Time=6405ns | PC=0x00000110 | LED_Out=0x00
+Time=6415ns | PC=0x00000114 | LED_Out=0x00
+Time=6425ns | PC=0x00000118 | LED_Out=0x00
+Time=6435ns | PC=0x0000011c | LED_Out=0x00
+Time=6445ns | PC=0x00000120 | LED_Out=0x00
+Time=6455ns | PC=0x00000124 | LED_Out=0x00
+Time=6465ns | PC=0x00000128 | LED_Out=0x00
+Time=6475ns | PC=0x0000012c | LED_Out=0x00
+Time=6485ns | PC=0x00000130 | LED_Out=0x00
+Time=6495ns | PC=0x00000134 | LED_Out=0x00
+Time=6505ns | PC=0x00000138 | LED_Out=0x00
+Time=6515ns | PC=0x0000013c | LED_Out=0x00
+Time=6525ns | PC=0x00000140 | LED_Out=0x00
+Time=6535ns | PC=0x00000144 | LED_Out=0x00
+Time=6545ns | PC=0x00000148 | LED_Out=0x00
+Time=6555ns | PC=0x0000014c | LED_Out=0x00
+Time=6565ns | PC=0x00000150 | LED_Out=0x00
+Time=6575ns | PC=0x00000154 | LED_Out=0x00
+Time=6585ns | PC=0x00000158 | LED_Out=0x00
+Time=6595ns | PC=0x0000015c | LED_Out=0x00
+Time=6605ns | PC=0x00000160 | LED_Out=0x00
+Time=6615ns | PC=0x00000164 | LED_Out=0x00
+Time=6625ns | PC=0x00000168 | LED_Out=0x00
+Time=6635ns | PC=0x0000016c | LED_Out=0x00
+Time=6645ns | PC=0x00000170 | LED_Out=0x00
+Time=6655ns | PC=0x00000174 | LED_Out=0x00
+Time=6665ns | PC=0x00000178 | LED_Out=0x00
+Time=6675ns | PC=0x0000017c | LED_Out=0x00
+Time=6685ns | PC=0x00000180 | LED_Out=0x00
+Time=6695ns | PC=0x00000184 | LED_Out=0x00
+Time=6705ns | PC=0x00000188 | LED_Out=0x00
+Time=6715ns | PC=0x0000018c | LED_Out=0x00
+Time=6725ns | PC=0x00000190 | LED_Out=0x00
+Time=6735ns | PC=0x00000194 | LED_Out=0x00
+Time=6745ns | PC=0x00000198 | LED_Out=0x00
+Time=6755ns | PC=0x0000019c | LED_Out=0x00
+Time=6765ns | PC=0x000001a0 | LED_Out=0x00
+Time=6775ns | PC=0x000001a4 | LED_Out=0x00
+Time=6785ns | PC=0x000001a8 | LED_Out=0x00
+Time=6795ns | PC=0x000001ac | LED_Out=0x00
+Time=6805ns | PC=0x000001b0 | LED_Out=0x00
+Time=6815ns | PC=0x000001b4 | LED_Out=0x00
+Time=6825ns | PC=0x000001b8 | LED_Out=0x00
+Time=6835ns | PC=0x000001bc | LED_Out=0x00
+Time=6845ns | PC=0x000001c0 | LED_Out=0x00
+Time=6855ns | PC=0x000001c4 | LED_Out=0x00
+Time=6865ns | PC=0x000001c8 | LED_Out=0x00
+Time=6875ns | PC=0x000001cc | LED_Out=0x00
+Time=6885ns | PC=0x000001d0 | LED_Out=0x00
+Time=6895ns | PC=0x000001d4 | LED_Out=0x00
+Time=6905ns | PC=0x000001d8 | LED_Out=0x00
+Time=6915ns | PC=0x000001dc | LED_Out=0x00
+Time=6925ns | PC=0x000001e0 | LED_Out=0x00
+Time=6935ns | PC=0x000001e4 | LED_Out=0x00
+Time=6945ns | PC=0x000001e8 | LED_Out=0x00
+Time=6955ns | PC=0x000001ec | LED_Out=0x00
+Time=6965ns | PC=0x000001f0 | LED_Out=0x00
+Time=6975ns | PC=0x000001f4 | LED_Out=0x00
+Time=6985ns | PC=0x000001f8 | LED_Out=0x00
+Time=6995ns | PC=0x000001fc | LED_Out=0x00
+Time=7005ns | PC=0x00000200 | LED_Out=0x00
+Time=7015ns | PC=0x00000204 | LED_Out=0x00
+Time=7025ns | PC=0x00000208 | LED_Out=0x00
+Time=7035ns | PC=0x0000020c | LED_Out=0x00
+Time=7045ns | PC=0x00000210 | LED_Out=0x00
+Time=7055ns | PC=0x00000214 | LED_Out=0x00
+Time=7065ns | PC=0x00000218 | LED_Out=0x00
+Time=7075ns | PC=0x0000021c | LED_Out=0x00
+Time=7085ns | PC=0x00000220 | LED_Out=0x00
+Time=7095ns | PC=0x00000224 | LED_Out=0x00
+Time=7105ns | PC=0x00000228 | LED_Out=0x00
+Time=7115ns | PC=0x0000022c | LED_Out=0x00
+Time=7125ns | PC=0x00000230 | LED_Out=0x00
+Time=7135ns | PC=0x00000234 | LED_Out=0x00
+Time=7145ns | PC=0x00000238 | LED_Out=0x00
+Time=7155ns | PC=0x0000023c | LED_Out=0x00
+Time=7165ns | PC=0x00000240 | LED_Out=0x00
+Time=7175ns | PC=0x00000244 | LED_Out=0x00
+Time=7185ns | PC=0x00000248 | LED_Out=0x00
+Time=7195ns | PC=0x0000024c | LED_Out=0x00
+Time=7205ns | PC=0x00000250 | LED_Out=0x00
+Time=7215ns | PC=0x00000254 | LED_Out=0x00
+Time=7225ns | PC=0x00000258 | LED_Out=0x00
+Time=7235ns | PC=0x0000025c | LED_Out=0x00
+Time=7245ns | PC=0x00000260 | LED_Out=0x00
+Time=7255ns | PC=0x00000264 | LED_Out=0x00
+Time=7265ns | PC=0x00000268 | LED_Out=0x00
+Time=7275ns | PC=0x0000026c | LED_Out=0x00
+Time=7285ns | PC=0x00000270 | LED_Out=0x00
+Time=7295ns | PC=0x00000274 | LED_Out=0x00
+Time=7305ns | PC=0x00000278 | LED_Out=0x00
+Time=7315ns | PC=0x0000027c | LED_Out=0x00
+Time=7325ns | PC=0x00000280 | LED_Out=0x00
+Time=7335ns | PC=0x00000284 | LED_Out=0x00
+Time=7345ns | PC=0x00000288 | LED_Out=0x00
+Time=7355ns | PC=0x0000028c | LED_Out=0x00
+Time=7365ns | PC=0x00000290 | LED_Out=0x00
+Time=7375ns | PC=0x00000294 | LED_Out=0x00
+Time=7385ns | PC=0x00000298 | LED_Out=0x00
+Time=7395ns | PC=0x0000029c | LED_Out=0x00
+Time=7405ns | PC=0x000002a0 | LED_Out=0x00
+Time=7415ns | PC=0x000002a4 | LED_Out=0x00
+Time=7425ns | PC=0x000002a8 | LED_Out=0x00
+Time=7435ns | PC=0x000002ac | LED_Out=0x00
+Time=7445ns | PC=0x000002b0 | LED_Out=0x00
+Time=7455ns | PC=0x000002b4 | LED_Out=0x00
+Time=7465ns | PC=0x000002b8 | LED_Out=0x00
+Time=7475ns | PC=0x000002bc | LED_Out=0x00
+Time=7485ns | PC=0x000002c0 | LED_Out=0x00
+Time=7495ns | PC=0x000002c4 | LED_Out=0x00
+Time=7505ns | PC=0x000002c8 | LED_Out=0x00
+Time=7515ns | PC=0x000002cc | LED_Out=0x00
+Time=7525ns | PC=0x000002d0 | LED_Out=0x00
+Time=7535ns | PC=0x000002d4 | LED_Out=0x00
+Time=7545ns | PC=0x000002d8 | LED_Out=0x00
+Time=7555ns | PC=0x000002dc | LED_Out=0x00
+Time=7565ns | PC=0x000002e0 | LED_Out=0x00
+Time=7575ns | PC=0x000002e4 | LED_Out=0x00
+Time=7585ns | PC=0x000002e8 | LED_Out=0x00
+Time=7595ns | PC=0x000002ec | LED_Out=0x00
+Time=7605ns | PC=0x000002f0 | LED_Out=0x00
+Time=7615ns | PC=0x000002f4 | LED_Out=0x00
+Time=7625ns | PC=0x000002f8 | LED_Out=0x00
+Time=7635ns | PC=0x000002fc | LED_Out=0x00
+Time=7645ns | PC=0x00000300 | LED_Out=0x00
+Time=7655ns | PC=0x00000304 | LED_Out=0x00
+Time=7665ns | PC=0x00000308 | LED_Out=0x00
+Time=7675ns | PC=0x0000030c | LED_Out=0x00
+Time=7685ns | PC=0x00000310 | LED_Out=0x00
+Time=7695ns | PC=0x00000314 | LED_Out=0x00
+Time=7705ns | PC=0x00000318 | LED_Out=0x00
+Time=7715ns | PC=0x0000031c | LED_Out=0x00
+Time=7725ns | PC=0x00000320 | LED_Out=0x00
+Time=7735ns | PC=0x00000324 | LED_Out=0x00
+Time=7745ns | PC=0x00000328 | LED_Out=0x00
+Time=7755ns | PC=0x0000032c | LED_Out=0x00
+Time=7765ns | PC=0x00000330 | LED_Out=0x00
+Time=7775ns | PC=0x00000334 | LED_Out=0x00
+Time=7785ns | PC=0x00000338 | LED_Out=0x00
+Time=7795ns | PC=0x0000033c | LED_Out=0x00
+Time=7805ns | PC=0x00000340 | LED_Out=0x00
+Time=7815ns | PC=0x00000344 | LED_Out=0x00
+Time=7825ns | PC=0x00000348 | LED_Out=0x00
+Time=7835ns | PC=0x0000034c | LED_Out=0x00
+Time=7845ns | PC=0x00000350 | LED_Out=0x00
+Time=7855ns | PC=0x00000354 | LED_Out=0x00
+Time=7865ns | PC=0x00000358 | LED_Out=0x00
+Time=7875ns | PC=0x0000035c | LED_Out=0x00
+Time=7885ns | PC=0x00000360 | LED_Out=0x00
+Time=7895ns | PC=0x00000364 | LED_Out=0x00
+Time=7905ns | PC=0x00000368 | LED_Out=0x00
+Time=7915ns | PC=0x0000036c | LED_Out=0x00
+Time=7925ns | PC=0x00000370 | LED_Out=0x00
+Time=7935ns | PC=0x00000374 | LED_Out=0x00
+Time=7945ns | PC=0x00000378 | LED_Out=0x00
+Time=7955ns | PC=0x0000037c | LED_Out=0x00
+Time=7965ns | PC=0x00000380 | LED_Out=0x00
+Time=7975ns | PC=0x00000384 | LED_Out=0x00
+Time=7985ns | PC=0x00000388 | LED_Out=0x00
+Time=7995ns | PC=0x0000038c | LED_Out=0x00
+Time=8005ns | PC=0x00000390 | LED_Out=0x00
+Time=8015ns | PC=0x00000394 | LED_Out=0x00
+Time=8025ns | PC=0x00000398 | LED_Out=0x00
+Time=8035ns | PC=0x0000039c | LED_Out=0x00
+Time=8045ns | PC=0x000003a0 | LED_Out=0x00
+Time=8055ns | PC=0x000003a4 | LED_Out=0x00
+Time=8065ns | PC=0x000003a8 | LED_Out=0x00
+Time=8075ns | PC=0x000003ac | LED_Out=0x00
+Time=8085ns | PC=0x000003b0 | LED_Out=0x00
+Time=8095ns | PC=0x000003b4 | LED_Out=0x00
+Time=8105ns | PC=0x000003b8 | LED_Out=0x00
+Time=8115ns | PC=0x000003bc | LED_Out=0x00
+Time=8125ns | PC=0x000003c0 | LED_Out=0x00
+Time=8135ns | PC=0x000003c4 | LED_Out=0x00
+Time=8145ns | PC=0x000003c8 | LED_Out=0x00
+Time=8155ns | PC=0x000003cc | LED_Out=0x00
+Time=8165ns | PC=0x000003d0 | LED_Out=0x00
+Time=8175ns | PC=0x000003d4 | LED_Out=0x00
+Time=8185ns | PC=0x000003d8 | LED_Out=0x00
+Time=8195ns | PC=0x000003dc | LED_Out=0x00
+Time=8205ns | PC=0x000003e0 | LED_Out=0x00
+Time=8215ns | PC=0x000003e4 | LED_Out=0x00
+Time=8225ns | PC=0x000003e8 | LED_Out=0x00
+Time=8235ns | PC=0x000003ec | LED_Out=0x00
+Time=8245ns | PC=0x000003f0 | LED_Out=0x00
+Time=8255ns | PC=0x000003f4 | LED_Out=0x00
+Time=8265ns | PC=0x000003f8 | LED_Out=0x00
+Time=8275ns | PC=0x000003fc | LED_Out=0x00
+Time=8285ns | PC=0x00000400 | LED_Out=0x00
+Time=8295ns | PC=0x00000404 | LED_Out=0x00
+Time=8305ns | PC=0x00000408 | LED_Out=0x00
+Time=8315ns | PC=0x0000040c | LED_Out=0x00
+Time=8325ns | PC=0x00000410 | LED_Out=0x00
+Time=8335ns | PC=0x00000414 | LED_Out=0x0a
+Time=8345ns | PC=0x00000418 | LED_Out=0x0a
+Time=8365ns | PC=0x0000041c | LED_Out=0x0a
+Time=8375ns | PC=0x0000041c | LED_Out=0x0f
+Time=8385ns | PC=0x00000420 | LED_Out=0x0f
+Time=8395ns | PC=0x00000424 | LED_Out=0x0f
+Time=10025ns | PC=0x00000080 | LED_Out=0x0f
+Time=10035ns | PC=0x00000084 | LED_Out=0x0f
+Time=10045ns | PC=0x00000088 | LED_Out=0x0f
+Time=10055ns | PC=0x0000008c | LED_Out=0x0f
+Time=10065ns | PC=0x00000090 | LED_Out=0x0f
+Time=10075ns | PC=0x00000094 | LED_Out=0x0f
+Time=10085ns | PC=0x00000098 | LED_Out=0x0f
+Time=10095ns | PC=0x0000009c | LED_Out=0x0f
+Time=10105ns | PC=0x000000a0 | LED_Out=0x0f
+Time=10115ns | PC=0x000000a4 | LED_Out=0x0f
+Time=10125ns | PC=0x000000a8 | LED_Out=0x0f
+Time=10135ns | PC=0x000000ac | LED_Out=0x0f
+Time=10145ns | PC=0x000000b0 | LED_Out=0x0f
+Time=10155ns | PC=0x000000b4 | LED_Out=0x0f
+Time=10165ns | PC=0x000000b8 | LED_Out=0x0f
+Time=10175ns | PC=0x000000bc | LED_Out=0x0f
+Time=10185ns | PC=0x000000c0 | LED_Out=0x0f
+Time=10195ns | PC=0x000000c4 | LED_Out=0x0f
+Time=10205ns | PC=0x000000c8 | LED_Out=0x0f
+Time=10215ns | PC=0x000000cc | LED_Out=0x0f
+Time=10225ns | PC=0x000000d0 | LED_Out=0x0f
+Time=10235ns | PC=0x000000d4 | LED_Out=0x0f
+Time=10245ns | PC=0x000000d8 | LED_Out=0x0f
+Time=10255ns | PC=0x000000dc | LED_Out=0x0f
+Time=10265ns | PC=0x000000e0 | LED_Out=0x0f
+Time=10275ns | PC=0x000000e4 | LED_Out=0x0f
+Time=10285ns | PC=0x000000e8 | LED_Out=0x0f
+Time=10295ns | PC=0x000000ec | LED_Out=0x0f
+Time=10305ns | PC=0x000000f0 | LED_Out=0x0f
+Time=10315ns | PC=0x000000f4 | LED_Out=0x0f
+Time=10325ns | PC=0x000000f8 | LED_Out=0x0f
+Time=10335ns | PC=0x000000fc | LED_Out=0x0f
+Time=10345ns | PC=0x00000100 | LED_Out=0x0f
+Time=10355ns | PC=0x00000104 | LED_Out=0x0f
+Time=10365ns | PC=0x00000108 | LED_Out=0x0f
+Time=10375ns | PC=0x0000010c | LED_Out=0x0f
+Time=10385ns | PC=0x00000110 | LED_Out=0x0f
+Time=10395ns | PC=0x00000114 | LED_Out=0x0f
+Time=10405ns | PC=0x00000118 | LED_Out=0x0f
+Time=10415ns | PC=0x0000011c | LED_Out=0x0f
+Time=10425ns | PC=0x00000120 | LED_Out=0x0f
+Time=10435ns | PC=0x00000124 | LED_Out=0x0f
+Time=10445ns | PC=0x00000128 | LED_Out=0x0f
+Time=10455ns | PC=0x0000012c | LED_Out=0x0f
+Time=10465ns | PC=0x00000130 | LED_Out=0x0f
+Time=10475ns | PC=0x00000134 | LED_Out=0x0f
+Time=10485ns | PC=0x00000138 | LED_Out=0x0f
+Time=10495ns | PC=0x0000013c | LED_Out=0x0f
+Time=10505ns | PC=0x00000140 | LED_Out=0x0f
+Time=10515ns | PC=0x00000144 | LED_Out=0x0f
+Time=10525ns | PC=0x00000148 | LED_Out=0x0f
+Time=10535ns | PC=0x0000014c | LED_Out=0x0f
+Time=10545ns | PC=0x00000150 | LED_Out=0x0f
+Time=10555ns | PC=0x00000154 | LED_Out=0x0f
+Time=10565ns | PC=0x00000158 | LED_Out=0x0f
+Time=10575ns | PC=0x0000015c | LED_Out=0x0f
+Time=10585ns | PC=0x00000160 | LED_Out=0x0f
+Time=10595ns | PC=0x00000164 | LED_Out=0x0f
+Time=10605ns | PC=0x00000168 | LED_Out=0x0f
+Time=10615ns | PC=0x0000016c | LED_Out=0x0f
+Time=10625ns | PC=0x00000170 | LED_Out=0x0f
+Time=10635ns | PC=0x00000174 | LED_Out=0x0f
+Time=10645ns | PC=0x00000178 | LED_Out=0x0f
+Time=10655ns | PC=0x0000017c | LED_Out=0x0f
+Time=10665ns | PC=0x00000180 | LED_Out=0x0f
+Time=10675ns | PC=0x00000184 | LED_Out=0x0f
+Time=10685ns | PC=0x00000188 | LED_Out=0x0f
+Time=10695ns | PC=0x0000018c | LED_Out=0x0f
+Time=10705ns | PC=0x00000190 | LED_Out=0x0f
+Time=10715ns | PC=0x00000194 | LED_Out=0x0f
+Time=10725ns | PC=0x00000198 | LED_Out=0x0f
+Time=10735ns | PC=0x0000019c | LED_Out=0x0f
+Time=10745ns | PC=0x000001a0 | LED_Out=0x0f
+Time=10755ns | PC=0x000001a4 | LED_Out=0x0f
+Time=10765ns | PC=0x000001a8 | LED_Out=0x0f
+Time=10775ns | PC=0x000001ac | LED_Out=0x0f
+Time=10785ns | PC=0x000001b0 | LED_Out=0x0f
+Time=10795ns | PC=0x000001b4 | LED_Out=0x0f
+Time=10805ns | PC=0x000001b8 | LED_Out=0x0f
+Time=10815ns | PC=0x000001bc | LED_Out=0x0f
+Time=10825ns | PC=0x000001c0 | LED_Out=0x0f
+Time=10835ns | PC=0x000001c4 | LED_Out=0x0f
+Time=10845ns | PC=0x000001c8 | LED_Out=0x0f
+Time=10855ns | PC=0x000001cc | LED_Out=0x0f
+Time=10865ns | PC=0x000001d0 | LED_Out=0x0f
+Time=10875ns | PC=0x000001d4 | LED_Out=0x0f
+Time=10885ns | PC=0x000001d8 | LED_Out=0x0f
+Time=10895ns | PC=0x000001dc | LED_Out=0x0f
+Time=10905ns | PC=0x000001e0 | LED_Out=0x0f
+Time=10915ns | PC=0x000001e4 | LED_Out=0x0f
+Time=10925ns | PC=0x000001e8 | LED_Out=0x0f
+Time=10935ns | PC=0x000001ec | LED_Out=0x0f
+Time=10945ns | PC=0x000001f0 | LED_Out=0x0f
+Time=10955ns | PC=0x000001f4 | LED_Out=0x0f
+Time=10965ns | PC=0x000001f8 | LED_Out=0x0f
+Time=10975ns | PC=0x000001fc | LED_Out=0x0f
+Time=10985ns | PC=0x00000200 | LED_Out=0x0f
+Time=10995ns | PC=0x00000204 | LED_Out=0x0f
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+[SYSTEM] Dang Reset toan bo he thong...
+Time=0ns | PC=0x00000000 | LED_Out=0x00
+[SYSTEM] He thong bat dau hoat dong.
+[TEST 1] Cho ngat tu TIMER (Sau 500 chu ky)...
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2386.148 ; gain = 0.000
+run 10 us
+Time=5015ns | PC=0x00000080 | LED_Out=0x00
+Time=5025ns | PC=0x00000084 | LED_Out=0x00
+Time=5035ns | PC=0x00000088 | LED_Out=0x00
+Time=5045ns | PC=0x0000008c | LED_Out=0x00
+Time=5055ns | PC=0x00000090 | LED_Out=0x00
+Time=5065ns | PC=0x00000094 | LED_Out=0x00
+Time=5075ns | PC=0x00000098 | LED_Out=0x00
+Time=5085ns | PC=0x0000009c | LED_Out=0x00
+Time=5095ns | PC=0x000000a0 | LED_Out=0x00
+Time=5105ns | PC=0x000000a4 | LED_Out=0x00
+Time=5115ns | PC=0x000000a8 | LED_Out=0x00
+Time=5125ns | PC=0x000000ac | LED_Out=0x00
+Time=5135ns | PC=0x000000b0 | LED_Out=0x00
+Time=5145ns | PC=0x000000b4 | LED_Out=0x00
+Time=5155ns | PC=0x000000b8 | LED_Out=0x00
+Time=5165ns | PC=0x000000bc | LED_Out=0x00
+Time=5175ns | PC=0x000000c0 | LED_Out=0x00
+Time=5185ns | PC=0x000000c4 | LED_Out=0x00
+Time=5195ns | PC=0x000000c8 | LED_Out=0x00
+Time=5205ns | PC=0x000000cc | LED_Out=0x00
+Time=5215ns | PC=0x000000d0 | LED_Out=0x00
+Time=5225ns | PC=0x000000d4 | LED_Out=0x00
+Time=5235ns | PC=0x000000d8 | LED_Out=0x00
+Time=5245ns | PC=0x000000dc | LED_Out=0x00
+Time=5255ns | PC=0x000000e0 | LED_Out=0x00
+Time=5265ns | PC=0x000000e4 | LED_Out=0x00
+Time=5275ns | PC=0x000000e8 | LED_Out=0x00
+Time=5285ns | PC=0x000000ec | LED_Out=0x00
+Time=5295ns | PC=0x000000f0 | LED_Out=0x00
+Time=5305ns | PC=0x000000f4 | LED_Out=0x00
+Time=5315ns | PC=0x000000f8 | LED_Out=0x00
+Time=5325ns | PC=0x000000fc | LED_Out=0x00
+Time=5335ns | PC=0x00000100 | LED_Out=0x00
+Time=5345ns | PC=0x00000104 | LED_Out=0x00
+Time=5355ns | PC=0x00000108 | LED_Out=0x00
+Time=5365ns | PC=0x0000010c | LED_Out=0x00
+Time=5375ns | PC=0x00000110 | LED_Out=0x00
+Time=5385ns | PC=0x00000114 | LED_Out=0x00
+Time=5395ns | PC=0x00000118 | LED_Out=0x00
+Time=5405ns | PC=0x0000011c | LED_Out=0x00
+Time=5415ns | PC=0x00000120 | LED_Out=0x00
+Time=5425ns | PC=0x00000124 | LED_Out=0x00
+Time=5435ns | PC=0x00000128 | LED_Out=0x00
+Time=5445ns | PC=0x0000012c | LED_Out=0x00
+Time=5455ns | PC=0x00000130 | LED_Out=0x00
+Time=5465ns | PC=0x00000134 | LED_Out=0x00
+Time=5475ns | PC=0x00000138 | LED_Out=0x00
+Time=5485ns | PC=0x0000013c | LED_Out=0x00
+Time=5495ns | PC=0x00000140 | LED_Out=0x00
+Time=5505ns | PC=0x00000144 | LED_Out=0x00
+Time=5515ns | PC=0x00000148 | LED_Out=0x00
+Time=5525ns | PC=0x0000014c | LED_Out=0x00
+Time=5535ns | PC=0x00000150 | LED_Out=0x00
+Time=5545ns | PC=0x00000154 | LED_Out=0x00
+Time=5555ns | PC=0x00000158 | LED_Out=0x00
+Time=5565ns | PC=0x0000015c | LED_Out=0x00
+Time=5575ns | PC=0x00000160 | LED_Out=0x00
+Time=5585ns | PC=0x00000164 | LED_Out=0x00
+Time=5595ns | PC=0x00000168 | LED_Out=0x00
+Time=5605ns | PC=0x0000016c | LED_Out=0x00
+Time=5615ns | PC=0x00000170 | LED_Out=0x00
+Time=5625ns | PC=0x00000174 | LED_Out=0x00
+Time=5635ns | PC=0x00000178 | LED_Out=0x00
+Time=5645ns | PC=0x0000017c | LED_Out=0x00
+Time=5655ns | PC=0x00000180 | LED_Out=0x00
+Time=5665ns | PC=0x00000184 | LED_Out=0x00
+Time=5675ns | PC=0x00000188 | LED_Out=0x00
+Time=5685ns | PC=0x0000018c | LED_Out=0x00
+Time=5695ns | PC=0x00000190 | LED_Out=0x00
+Time=5705ns | PC=0x00000194 | LED_Out=0x00
+Time=5715ns | PC=0x00000198 | LED_Out=0x00
+Time=5725ns | PC=0x0000019c | LED_Out=0x00
+Time=5735ns | PC=0x000001a0 | LED_Out=0x00
+Time=5745ns | PC=0x000001a4 | LED_Out=0x00
+Time=5755ns | PC=0x000001a8 | LED_Out=0x00
+Time=5765ns | PC=0x000001ac | LED_Out=0x00
+Time=5775ns | PC=0x000001b0 | LED_Out=0x00
+Time=5785ns | PC=0x000001b4 | LED_Out=0x00
+Time=5795ns | PC=0x000001b8 | LED_Out=0x00
+Time=5805ns | PC=0x000001bc | LED_Out=0x00
+Time=5815ns | PC=0x000001c0 | LED_Out=0x00
+Time=5825ns | PC=0x000001c4 | LED_Out=0x00
+Time=5835ns | PC=0x000001c8 | LED_Out=0x00
+Time=5845ns | PC=0x000001cc | LED_Out=0x00
+Time=5855ns | PC=0x000001d0 | LED_Out=0x00
+Time=5865ns | PC=0x000001d4 | LED_Out=0x00
+Time=5875ns | PC=0x000001d8 | LED_Out=0x00
+Time=5885ns | PC=0x000001dc | LED_Out=0x00
+Time=5895ns | PC=0x000001e0 | LED_Out=0x00
+Time=5905ns | PC=0x000001e4 | LED_Out=0x00
+Time=5915ns | PC=0x000001e8 | LED_Out=0x00
+Time=5925ns | PC=0x000001ec | LED_Out=0x00
+Time=5935ns | PC=0x000001f0 | LED_Out=0x00
+Time=5945ns | PC=0x000001f4 | LED_Out=0x00
+Time=5955ns | PC=0x000001f8 | LED_Out=0x00
+Time=5965ns | PC=0x000001fc | LED_Out=0x00
+Time=5975ns | PC=0x00000200 | LED_Out=0x00
+Time=5985ns | PC=0x00000204 | LED_Out=0x00
+Time=5995ns | PC=0x00000208 | LED_Out=0x00
+Time=6005ns | PC=0x0000020c | LED_Out=0x00
+Time=6015ns | PC=0x00000210 | LED_Out=0x00
+[TEST 2] Kich hoat Ngat ngoai (External IRQ)...
+Time=6025ns | PC=0x00000214 | LED_Out=0x00
+Time=6035ns | PC=0x00000080 | LED_Out=0x00
+[TEST 2] Da tat Ngat ngoai.
+Time=6055ns | PC=0x00000084 | LED_Out=0x00
+Time=6065ns | PC=0x00000088 | LED_Out=0x00
+Time=6075ns | PC=0x0000008c | LED_Out=0x00
+Time=6085ns | PC=0x00000090 | LED_Out=0x00
+Time=6095ns | PC=0x00000094 | LED_Out=0x00
+Time=6105ns | PC=0x00000098 | LED_Out=0x00
+Time=6115ns | PC=0x0000009c | LED_Out=0x00
+Time=6125ns | PC=0x000000a0 | LED_Out=0x00
+Time=6135ns | PC=0x000000a4 | LED_Out=0x00
+[TEST 3] Thu nghiem truyen nhan UART RX...
+Time=6145ns | PC=0x000000a8 | LED_Out=0x00
+Time=6155ns | PC=0x000000ac | LED_Out=0x00
+Time=6165ns | PC=0x000000b0 | LED_Out=0x00
+Time=6175ns | PC=0x000000b4 | LED_Out=0x00
+Time=6185ns | PC=0x000000b8 | LED_Out=0x00
+Time=6195ns | PC=0x000000bc | LED_Out=0x00
+Time=6205ns | PC=0x000000c0 | LED_Out=0x00
+Time=6215ns | PC=0x000000c4 | LED_Out=0x00
+Time=6225ns | PC=0x000000c8 | LED_Out=0x00
+Time=6235ns | PC=0x000000cc | LED_Out=0x00
+[UART_RX] Bat dau gui byte: 0xa5 toi MCU
+Time=6245ns | PC=0x000000d0 | LED_Out=0x00
+Time=6255ns | PC=0x000000d4 | LED_Out=0x00
+Time=6265ns | PC=0x000000d8 | LED_Out=0x00
+Time=6275ns | PC=0x000000dc | LED_Out=0x00
+Time=6285ns | PC=0x000000e0 | LED_Out=0x00
+Time=6295ns | PC=0x000000e4 | LED_Out=0x00
+Time=6305ns | PC=0x000000e8 | LED_Out=0x00
+Time=6315ns | PC=0x000000ec | LED_Out=0x00
+Time=6325ns | PC=0x000000f0 | LED_Out=0x00
+Time=6335ns | PC=0x000000f4 | LED_Out=0x00
+Time=6345ns | PC=0x000000f8 | LED_Out=0x00
+Time=6355ns | PC=0x000000fc | LED_Out=0x00
+Time=6365ns | PC=0x00000100 | LED_Out=0x00
+Time=6375ns | PC=0x00000104 | LED_Out=0x00
+Time=6385ns | PC=0x00000108 | LED_Out=0x00
+Time=6395ns | PC=0x0000010c | LED_Out=0x00
+Time=6405ns | PC=0x00000110 | LED_Out=0x00
+Time=6415ns | PC=0x00000114 | LED_Out=0x00
+Time=6425ns | PC=0x00000118 | LED_Out=0x00
+Time=6435ns | PC=0x0000011c | LED_Out=0x00
+Time=6445ns | PC=0x00000120 | LED_Out=0x00
+Time=6455ns | PC=0x00000124 | LED_Out=0x00
+Time=6465ns | PC=0x00000128 | LED_Out=0x00
+Time=6475ns | PC=0x0000012c | LED_Out=0x00
+Time=6485ns | PC=0x00000130 | LED_Out=0x00
+Time=6495ns | PC=0x00000134 | LED_Out=0x00
+Time=6505ns | PC=0x00000138 | LED_Out=0x00
+Time=6515ns | PC=0x0000013c | LED_Out=0x00
+Time=6525ns | PC=0x00000140 | LED_Out=0x00
+Time=6535ns | PC=0x00000144 | LED_Out=0x00
+Time=6545ns | PC=0x00000148 | LED_Out=0x00
+Time=6555ns | PC=0x0000014c | LED_Out=0x00
+Time=6565ns | PC=0x00000150 | LED_Out=0x00
+Time=6575ns | PC=0x00000154 | LED_Out=0x00
+Time=6585ns | PC=0x00000158 | LED_Out=0x00
+Time=6595ns | PC=0x0000015c | LED_Out=0x00
+Time=6605ns | PC=0x00000160 | LED_Out=0x00
+Time=6615ns | PC=0x00000164 | LED_Out=0x00
+Time=6625ns | PC=0x00000168 | LED_Out=0x00
+Time=6635ns | PC=0x0000016c | LED_Out=0x00
+Time=6645ns | PC=0x00000170 | LED_Out=0x00
+Time=6655ns | PC=0x00000174 | LED_Out=0x00
+Time=6665ns | PC=0x00000178 | LED_Out=0x00
+Time=6675ns | PC=0x0000017c | LED_Out=0x00
+Time=6685ns | PC=0x00000180 | LED_Out=0x00
+Time=6695ns | PC=0x00000184 | LED_Out=0x00
+Time=6705ns | PC=0x00000188 | LED_Out=0x00
+Time=6715ns | PC=0x0000018c | LED_Out=0x00
+Time=6725ns | PC=0x00000190 | LED_Out=0x00
+Time=6735ns | PC=0x00000194 | LED_Out=0x00
+Time=6745ns | PC=0x00000198 | LED_Out=0x00
+Time=6755ns | PC=0x0000019c | LED_Out=0x00
+Time=6765ns | PC=0x000001a0 | LED_Out=0x00
+Time=6775ns | PC=0x000001a4 | LED_Out=0x00
+Time=6785ns | PC=0x000001a8 | LED_Out=0x00
+Time=6795ns | PC=0x000001ac | LED_Out=0x00
+Time=6805ns | PC=0x000001b0 | LED_Out=0x00
+Time=6815ns | PC=0x000001b4 | LED_Out=0x00
+Time=6825ns | PC=0x000001b8 | LED_Out=0x00
+Time=6835ns | PC=0x000001bc | LED_Out=0x00
+Time=6845ns | PC=0x000001c0 | LED_Out=0x00
+Time=6855ns | PC=0x000001c4 | LED_Out=0x00
+Time=6865ns | PC=0x000001c8 | LED_Out=0x00
+Time=6875ns | PC=0x000001cc | LED_Out=0x00
+Time=6885ns | PC=0x000001d0 | LED_Out=0x00
+Time=6895ns | PC=0x000001d4 | LED_Out=0x00
+Time=6905ns | PC=0x000001d8 | LED_Out=0x00
+Time=6915ns | PC=0x000001dc | LED_Out=0x00
+Time=6925ns | PC=0x000001e0 | LED_Out=0x00
+Time=6935ns | PC=0x000001e4 | LED_Out=0x00
+Time=6945ns | PC=0x000001e8 | LED_Out=0x00
+Time=6955ns | PC=0x000001ec | LED_Out=0x00
+Time=6965ns | PC=0x000001f0 | LED_Out=0x00
+Time=6975ns | PC=0x000001f4 | LED_Out=0x00
+Time=6985ns | PC=0x000001f8 | LED_Out=0x00
+Time=6995ns | PC=0x000001fc | LED_Out=0x00
+Time=7005ns | PC=0x00000200 | LED_Out=0x00
+Time=7015ns | PC=0x00000204 | LED_Out=0x00
+Time=7025ns | PC=0x00000208 | LED_Out=0x00
+Time=7035ns | PC=0x0000020c | LED_Out=0x00
+Time=7045ns | PC=0x00000210 | LED_Out=0x00
+Time=7055ns | PC=0x00000214 | LED_Out=0x00
+Time=7065ns | PC=0x00000218 | LED_Out=0x00
+Time=7075ns | PC=0x0000021c | LED_Out=0x00
+Time=7085ns | PC=0x00000220 | LED_Out=0x00
+Time=7095ns | PC=0x00000224 | LED_Out=0x00
+Time=7105ns | PC=0x00000228 | LED_Out=0x00
+Time=7115ns | PC=0x0000022c | LED_Out=0x00
+Time=7125ns | PC=0x00000230 | LED_Out=0x00
+Time=7135ns | PC=0x00000234 | LED_Out=0x00
+Time=7145ns | PC=0x00000238 | LED_Out=0x00
+Time=7155ns | PC=0x0000023c | LED_Out=0x00
+Time=7165ns | PC=0x00000240 | LED_Out=0x00
+Time=7175ns | PC=0x00000244 | LED_Out=0x00
+Time=7185ns | PC=0x00000248 | LED_Out=0x00
+Time=7195ns | PC=0x0000024c | LED_Out=0x00
+Time=7205ns | PC=0x00000250 | LED_Out=0x00
+Time=7215ns | PC=0x00000254 | LED_Out=0x00
+Time=7225ns | PC=0x00000258 | LED_Out=0x00
+Time=7235ns | PC=0x0000025c | LED_Out=0x00
+Time=7245ns | PC=0x00000260 | LED_Out=0x00
+Time=7255ns | PC=0x00000264 | LED_Out=0x00
+Time=7265ns | PC=0x00000268 | LED_Out=0x00
+Time=7275ns | PC=0x0000026c | LED_Out=0x00
+Time=7285ns | PC=0x00000270 | LED_Out=0x00
+Time=7295ns | PC=0x00000274 | LED_Out=0x00
+Time=7305ns | PC=0x00000278 | LED_Out=0x00
+Time=7315ns | PC=0x0000027c | LED_Out=0x00
+Time=7325ns | PC=0x00000280 | LED_Out=0x00
+Time=7335ns | PC=0x00000284 | LED_Out=0x00
+Time=7345ns | PC=0x00000288 | LED_Out=0x00
+Time=7355ns | PC=0x0000028c | LED_Out=0x00
+Time=7365ns | PC=0x00000290 | LED_Out=0x00
+Time=7375ns | PC=0x00000294 | LED_Out=0x00
+Time=7385ns | PC=0x00000298 | LED_Out=0x00
+Time=7395ns | PC=0x0000029c | LED_Out=0x00
+Time=7405ns | PC=0x000002a0 | LED_Out=0x00
+Time=7415ns | PC=0x000002a4 | LED_Out=0x00
+Time=7425ns | PC=0x000002a8 | LED_Out=0x00
+Time=7435ns | PC=0x000002ac | LED_Out=0x00
+Time=7445ns | PC=0x000002b0 | LED_Out=0x00
+Time=7455ns | PC=0x000002b4 | LED_Out=0x00
+Time=7465ns | PC=0x000002b8 | LED_Out=0x00
+Time=7475ns | PC=0x000002bc | LED_Out=0x00
+Time=7485ns | PC=0x000002c0 | LED_Out=0x00
+Time=7495ns | PC=0x000002c4 | LED_Out=0x00
+Time=7505ns | PC=0x000002c8 | LED_Out=0x00
+Time=7515ns | PC=0x000002cc | LED_Out=0x00
+Time=7525ns | PC=0x000002d0 | LED_Out=0x00
+Time=7535ns | PC=0x000002d4 | LED_Out=0x00
+Time=7545ns | PC=0x000002d8 | LED_Out=0x00
+Time=7555ns | PC=0x000002dc | LED_Out=0x00
+Time=7565ns | PC=0x000002e0 | LED_Out=0x00
+Time=7575ns | PC=0x000002e4 | LED_Out=0x00
+Time=7585ns | PC=0x000002e8 | LED_Out=0x00
+Time=7595ns | PC=0x000002ec | LED_Out=0x00
+Time=7605ns | PC=0x000002f0 | LED_Out=0x00
+Time=7615ns | PC=0x000002f4 | LED_Out=0x00
+Time=7625ns | PC=0x000002f8 | LED_Out=0x00
+Time=7635ns | PC=0x000002fc | LED_Out=0x00
+Time=7645ns | PC=0x00000300 | LED_Out=0x00
+Time=7655ns | PC=0x00000304 | LED_Out=0x00
+Time=7665ns | PC=0x00000308 | LED_Out=0x00
+Time=7675ns | PC=0x0000030c | LED_Out=0x00
+Time=7685ns | PC=0x00000310 | LED_Out=0x00
+Time=7695ns | PC=0x00000314 | LED_Out=0x00
+Time=7705ns | PC=0x00000318 | LED_Out=0x00
+Time=7715ns | PC=0x0000031c | LED_Out=0x00
+Time=7725ns | PC=0x00000320 | LED_Out=0x00
+Time=7735ns | PC=0x00000324 | LED_Out=0x00
+Time=7745ns | PC=0x00000328 | LED_Out=0x00
+Time=7755ns | PC=0x0000032c | LED_Out=0x00
+Time=7765ns | PC=0x00000330 | LED_Out=0x00
+Time=7775ns | PC=0x00000334 | LED_Out=0x00
+Time=7785ns | PC=0x00000338 | LED_Out=0x00
+Time=7795ns | PC=0x0000033c | LED_Out=0x00
+Time=7805ns | PC=0x00000340 | LED_Out=0x00
+Time=7815ns | PC=0x00000344 | LED_Out=0x00
+Time=7825ns | PC=0x00000348 | LED_Out=0x00
+Time=7835ns | PC=0x0000034c | LED_Out=0x00
+Time=7845ns | PC=0x00000350 | LED_Out=0x00
+Time=7855ns | PC=0x00000354 | LED_Out=0x00
+Time=7865ns | PC=0x00000358 | LED_Out=0x00
+Time=7875ns | PC=0x0000035c | LED_Out=0x00
+Time=7885ns | PC=0x00000360 | LED_Out=0x00
+Time=7895ns | PC=0x00000364 | LED_Out=0x00
+Time=7905ns | PC=0x00000368 | LED_Out=0x00
+Time=7915ns | PC=0x0000036c | LED_Out=0x00
+Time=7925ns | PC=0x00000370 | LED_Out=0x00
+Time=7935ns | PC=0x00000374 | LED_Out=0x00
+Time=7945ns | PC=0x00000378 | LED_Out=0x00
+Time=7955ns | PC=0x0000037c | LED_Out=0x00
+Time=7965ns | PC=0x00000380 | LED_Out=0x00
+Time=7975ns | PC=0x00000384 | LED_Out=0x00
+Time=7985ns | PC=0x00000388 | LED_Out=0x00
+Time=7995ns | PC=0x0000038c | LED_Out=0x00
+Time=8005ns | PC=0x00000390 | LED_Out=0x00
+Time=8015ns | PC=0x00000394 | LED_Out=0x00
+Time=8025ns | PC=0x00000398 | LED_Out=0x00
+Time=8035ns | PC=0x0000039c | LED_Out=0x00
+Time=8045ns | PC=0x000003a0 | LED_Out=0x00
+Time=8055ns | PC=0x000003a4 | LED_Out=0x00
+Time=8065ns | PC=0x000003a8 | LED_Out=0x00
+Time=8075ns | PC=0x000003ac | LED_Out=0x00
+Time=8085ns | PC=0x000003b0 | LED_Out=0x00
+Time=8095ns | PC=0x000003b4 | LED_Out=0x00
+Time=8105ns | PC=0x000003b8 | LED_Out=0x00
+Time=8115ns | PC=0x000003bc | LED_Out=0x00
+Time=8125ns | PC=0x000003c0 | LED_Out=0x00
+Time=8135ns | PC=0x000003c4 | LED_Out=0x00
+Time=8145ns | PC=0x000003c8 | LED_Out=0x00
+Time=8155ns | PC=0x000003cc | LED_Out=0x00
+Time=8165ns | PC=0x000003d0 | LED_Out=0x00
+Time=8175ns | PC=0x000003d4 | LED_Out=0x00
+Time=8185ns | PC=0x000003d8 | LED_Out=0x00
+Time=8195ns | PC=0x000003dc | LED_Out=0x00
+Time=8205ns | PC=0x000003e0 | LED_Out=0x00
+Time=8215ns | PC=0x000003e4 | LED_Out=0x00
+Time=8225ns | PC=0x000003e8 | LED_Out=0x00
+Time=8235ns | PC=0x000003ec | LED_Out=0x00
+Time=8245ns | PC=0x000003f0 | LED_Out=0x00
+Time=8255ns | PC=0x000003f4 | LED_Out=0x00
+Time=8265ns | PC=0x000003f8 | LED_Out=0x00
+Time=8275ns | PC=0x000003fc | LED_Out=0x00
+Time=8285ns | PC=0x00000400 | LED_Out=0x00
+Time=8295ns | PC=0x00000404 | LED_Out=0x00
+Time=8305ns | PC=0x00000408 | LED_Out=0x00
+Time=8315ns | PC=0x0000040c | LED_Out=0x00
+Time=8325ns | PC=0x00000410 | LED_Out=0x00
+Time=8335ns | PC=0x00000414 | LED_Out=0x0a
+Time=8345ns | PC=0x00000418 | LED_Out=0x0a
+Time=8365ns | PC=0x0000041c | LED_Out=0x0a
+Time=8375ns | PC=0x0000041c | LED_Out=0x0f
+Time=8385ns | PC=0x00000420 | LED_Out=0x0f
+Time=8395ns | PC=0x00000424 | LED_Out=0x0f
+Time=10025ns | PC=0x00000080 | LED_Out=0x0f
+Time=10035ns | PC=0x00000084 | LED_Out=0x0f
+Time=10045ns | PC=0x00000088 | LED_Out=0x0f
+Time=10055ns | PC=0x0000008c | LED_Out=0x0f
+Time=10065ns | PC=0x00000090 | LED_Out=0x0f
+Time=10075ns | PC=0x00000094 | LED_Out=0x0f
+Time=10085ns | PC=0x00000098 | LED_Out=0x0f
+Time=10095ns | PC=0x0000009c | LED_Out=0x0f
+Time=10105ns | PC=0x000000a0 | LED_Out=0x0f
+Time=10115ns | PC=0x000000a4 | LED_Out=0x0f
+Time=10125ns | PC=0x000000a8 | LED_Out=0x0f
+Time=10135ns | PC=0x000000ac | LED_Out=0x0f
+Time=10145ns | PC=0x000000b0 | LED_Out=0x0f
+Time=10155ns | PC=0x000000b4 | LED_Out=0x0f
+Time=10165ns | PC=0x000000b8 | LED_Out=0x0f
+Time=10175ns | PC=0x000000bc | LED_Out=0x0f
+Time=10185ns | PC=0x000000c0 | LED_Out=0x0f
+Time=10195ns | PC=0x000000c4 | LED_Out=0x0f
+Time=10205ns | PC=0x000000c8 | LED_Out=0x0f
+Time=10215ns | PC=0x000000cc | LED_Out=0x0f
+Time=10225ns | PC=0x000000d0 | LED_Out=0x0f
+Time=10235ns | PC=0x000000d4 | LED_Out=0x0f
+Time=10245ns | PC=0x000000d8 | LED_Out=0x0f
+Time=10255ns | PC=0x000000dc | LED_Out=0x0f
+Time=10265ns | PC=0x000000e0 | LED_Out=0x0f
+Time=10275ns | PC=0x000000e4 | LED_Out=0x0f
+Time=10285ns | PC=0x000000e8 | LED_Out=0x0f
+Time=10295ns | PC=0x000000ec | LED_Out=0x0f
+Time=10305ns | PC=0x000000f0 | LED_Out=0x0f
+Time=10315ns | PC=0x000000f4 | LED_Out=0x0f
+Time=10325ns | PC=0x000000f8 | LED_Out=0x0f
+Time=10335ns | PC=0x000000fc | LED_Out=0x0f
+Time=10345ns | PC=0x00000100 | LED_Out=0x0f
+Time=10355ns | PC=0x00000104 | LED_Out=0x0f
+Time=10365ns | PC=0x00000108 | LED_Out=0x0f
+Time=10375ns | PC=0x0000010c | LED_Out=0x0f
+Time=10385ns | PC=0x00000110 | LED_Out=0x0f
+Time=10395ns | PC=0x00000114 | LED_Out=0x0f
+Time=10405ns | PC=0x00000118 | LED_Out=0x0f
+Time=10415ns | PC=0x0000011c | LED_Out=0x0f
+Time=10425ns | PC=0x00000120 | LED_Out=0x0f
+Time=10435ns | PC=0x00000124 | LED_Out=0x0f
+Time=10445ns | PC=0x00000128 | LED_Out=0x0f
+Time=10455ns | PC=0x0000012c | LED_Out=0x0f
+Time=10465ns | PC=0x00000130 | LED_Out=0x0f
+Time=10475ns | PC=0x00000134 | LED_Out=0x0f
+Time=10485ns | PC=0x00000138 | LED_Out=0x0f
+Time=10495ns | PC=0x0000013c | LED_Out=0x0f
+Time=10505ns | PC=0x00000140 | LED_Out=0x0f
+Time=10515ns | PC=0x00000144 | LED_Out=0x0f
+Time=10525ns | PC=0x00000148 | LED_Out=0x0f
+Time=10535ns | PC=0x0000014c | LED_Out=0x0f
+Time=10545ns | PC=0x00000150 | LED_Out=0x0f
+Time=10555ns | PC=0x00000154 | LED_Out=0x0f
+Time=10565ns | PC=0x00000158 | LED_Out=0x0f
+Time=10575ns | PC=0x0000015c | LED_Out=0x0f
+Time=10585ns | PC=0x00000160 | LED_Out=0x0f
+Time=10595ns | PC=0x00000164 | LED_Out=0x0f
+Time=10605ns | PC=0x00000168 | LED_Out=0x0f
+Time=10615ns | PC=0x0000016c | LED_Out=0x0f
+Time=10625ns | PC=0x00000170 | LED_Out=0x0f
+Time=10635ns | PC=0x00000174 | LED_Out=0x0f
+Time=10645ns | PC=0x00000178 | LED_Out=0x0f
+Time=10655ns | PC=0x0000017c | LED_Out=0x0f
+Time=10665ns | PC=0x00000180 | LED_Out=0x0f
+Time=10675ns | PC=0x00000184 | LED_Out=0x0f
+Time=10685ns | PC=0x00000188 | LED_Out=0x0f
+Time=10695ns | PC=0x0000018c | LED_Out=0x0f
+Time=10705ns | PC=0x00000190 | LED_Out=0x0f
+Time=10715ns | PC=0x00000194 | LED_Out=0x0f
+Time=10725ns | PC=0x00000198 | LED_Out=0x0f
+Time=10735ns | PC=0x0000019c | LED_Out=0x0f
+Time=10745ns | PC=0x000001a0 | LED_Out=0x0f
+Time=10755ns | PC=0x000001a4 | LED_Out=0x0f
+Time=10765ns | PC=0x000001a8 | LED_Out=0x0f
+Time=10775ns | PC=0x000001ac | LED_Out=0x0f
+Time=10785ns | PC=0x000001b0 | LED_Out=0x0f
+Time=10795ns | PC=0x000001b4 | LED_Out=0x0f
+Time=10805ns | PC=0x000001b8 | LED_Out=0x0f
+Time=10815ns | PC=0x000001bc | LED_Out=0x0f
+Time=10825ns | PC=0x000001c0 | LED_Out=0x0f
+Time=10835ns | PC=0x000001c4 | LED_Out=0x0f
+Time=10845ns | PC=0x000001c8 | LED_Out=0x0f
+Time=10855ns | PC=0x000001cc | LED_Out=0x0f
+Time=10865ns | PC=0x000001d0 | LED_Out=0x0f
+Time=10875ns | PC=0x000001d4 | LED_Out=0x0f
+Time=10885ns | PC=0x000001d8 | LED_Out=0x0f
+Time=10895ns | PC=0x000001dc | LED_Out=0x0f
+Time=10905ns | PC=0x000001e0 | LED_Out=0x0f
+Time=10915ns | PC=0x000001e4 | LED_Out=0x0f
+Time=10925ns | PC=0x000001e8 | LED_Out=0x0f
+Time=10935ns | PC=0x000001ec | LED_Out=0x0f
+Time=10945ns | PC=0x000001f0 | LED_Out=0x0f
+Time=10955ns | PC=0x000001f4 | LED_Out=0x0f
+Time=10965ns | PC=0x000001f8 | LED_Out=0x0f
+Time=10975ns | PC=0x000001fc | LED_Out=0x0f
+Time=10985ns | PC=0x00000200 | LED_Out=0x0f
+Time=10995ns | PC=0x00000204 | LED_Out=0x0f
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jun 17 16:07:30 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 2386.148 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2386.148 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2386.148 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 17 16:09:57 2026
+| Host         : Toan running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : rv32e_mcu
+| Device       : 7z020clg484-1
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs              |   29 |     0 |     53200 |  0.05 |
+|   LUT as Logic          |   29 |     0 |     53200 |  0.05 |
+|   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
+| Slice Registers         |   61 |     0 |    106400 |  0.06 |
+|   Register as Flip Flop |   61 |     0 |    106400 |  0.06 |
+|   Register as Latch     |    0 |     0 |    106400 |  0.00 |
+| F7 Muxes                |    0 |     0 |     26600 |  0.00 |
+| F8 Muxes                |    0 |     0 |     13300 |  0.00 |
++-------------------------+------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 61    |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------------------------+------+-------+-----------+-------+
+|                  Site Type                 | Used | Fixed | Available | Util% |
++--------------------------------------------+------+-------+-----------+-------+
+| Slice                                      |   22 |     0 |     13300 |  0.17 |
+|   SLICEL                                   |   10 |     0 |           |       |
+|   SLICEM                                   |   12 |     0 |           |       |
+| LUT as Logic                               |   29 |     0 |     53200 |  0.05 |
+|   using O5 output only                     |    0 |       |           |       |
+|   using O6 output only                     |   23 |       |           |       |
+|   using O5 and O6                          |    6 |       |           |       |
+| LUT as Memory                              |    0 |     0 |     17400 |  0.00 |
+|   LUT as Distributed RAM                   |    0 |     0 |           |       |
+|   LUT as Shift Register                    |    0 |     0 |           |       |
+| Slice Registers                            |   61 |     0 |    106400 |  0.06 |
+|   Register driven from within the Slice    |   51 |       |           |       |
+|   Register driven from outside the Slice   |   10 |       |           |       |
+|     LUT in front of the register is unused |    9 |       |           |       |
+|     LUT in front of the register is used   |    1 |       |           |       |
+| Unique Control Sets                        |    5 |       |     13300 |  0.04 |
++--------------------------------------------+------+-------+-----------+-------+
+* Note: Available Control Sets calculated as Slice Registers / 8, Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       140 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       140 |  0.00 |
+|   RAMB18       |    0 |     0 |       280 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       220 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |   11 |     0 |       200 |  5.50 |
+|   IOB Master Pads           |    5 |       |           |       |
+|   IOB Slave Pads            |    5 |       |           |       |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |  0.00 |
+| IBUFDS                      |    0 |     0 |       192 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
+| ILOGIC                      |    0 |     0 |       200 |  0.00 |
+| OLOGIC                      |    0 |     0 |       200 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFIO      |    0 |     0 |        16 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         4 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |        16 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     |   61 |        Flop & Latch |
+| LUT6     |   15 |                 LUT |
+| OBUF     |    9 |                  IO |
+| CARRY4   |    8 |          CarryLogic |
+| LUT2     |    7 |                 LUT |
+| LUT3     |    5 |                 LUT |
+| LUT4     |    4 |                 LUT |
+| LUT5     |    3 |                 LUT |
+| IBUF     |    2 |                  IO |
+| LUT1     |    1 |                 LUT |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+Register Optimization
+invalid command name "Register"
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: rv32e_mcu
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2407.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rv32e_mcu' [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/Admin/Desktop/da1/timer.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (1#1) [C:/Users/Admin/Desktop/da1/timer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_cpu' [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Admin/Desktop/da1/firmware/main.mem' is read successfully [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:333]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:102]
+INFO: [Synth 8-226] default block is never used [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:216]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Admin/Desktop/da1/register_file.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (2#1) [C:/Users/Admin/Desktop/da1/register_file.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Admin/Desktop/da1/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (3#1) [C:/Users/Admin/Desktop/da1/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:1]
+	Parameter CLK_PER_BIT bound to: 868 - type: integer 
+	Parameter STATE_IDLE bound to: 2'b00 
+	Parameter STATE_START bound to: 2'b01 
+	Parameter STATE_DATA bound to: 2'b10 
+	Parameter STATE_STOP bound to: 2'b11 
+WARNING: [Synth 8-5788] Register tx_data_buffer_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:42]
+WARNING: [Synth 8-5788] Register tx_clk_count_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:45]
+WARNING: [Synth 8-5788] Register tx_bit_index_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:54]
+WARNING: [Synth 8-5788] Register rx_clk_count_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:97]
+WARNING: [Synth 8-5788] Register rx_bit_index_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:106]
+WARNING: [Synth 8-5788] Register rx_data_reg in module uart_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (4#1) [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v:1]
+WARNING: [Synth 8-350] instance 'u_uart' of module 'uart_top' requires 9 connections, but only 6 given [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [Synth 8-6014] Unused sequential element mepc_reg was removed.  [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_cpu' (5#1) [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:3]
+WARNING: [Synth 8-3848] Net rst_n in module/entity rv32e_mcu does not have driver. [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_mcu' (6#1) [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2407.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_uart:uart_rx to constant 0 [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [Synth 8-3295] tying undriven pin cpu0:rst_n to constant 0 [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:18]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2407.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2407.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/constrs_1/new/pins.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2407.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2407.047 ; gain = 0.000
+19 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2407.047 ; gain = 0.000
+ipx::package_project -root_dir c:/users/admin/desktop/rv32e_ip -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'external_irq' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'external_irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core c:/users/admin/desktop/rv32e_ip/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/admin/desktop/rv32e_ip c:/users/admin/desktop/rv32e_ip/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2407.047 ; gain = 0.000
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/alu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/register_file.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/rv32e_cpu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/timer.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/uart.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/rv32e_mcu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/users/admin/desktop/rv32e_ip/src/tb_rv32e_mcu.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2407.047 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project rv32e
+current_project tmp_edit_project
+close_project
+save_wave_config {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 17 17:11:03 2026...

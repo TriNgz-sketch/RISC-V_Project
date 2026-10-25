@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+[t=0 ns] LED thay doi: 00000000 ->   0 (lan thu 0)
+[t=100000 ns] Tha reset, CPU bat dau chay.
+[t=212000 ns] LED thay doi: 00000001 ->   1 (lan thu 1)

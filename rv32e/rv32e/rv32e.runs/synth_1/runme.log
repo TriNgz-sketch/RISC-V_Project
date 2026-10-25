@@ -1,0 +1,357 @@
+
+*** Running vivado
+    with args -log rv32e_mcu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rv32e_mcu.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Jul 14 13:30:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source rv32e_mcu.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 534.102 ; gain = 222.594
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Nguye/Downloads/Vivado/rv32e/ip_repo/rv32e_axi_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: synth_design -top rv32e_mcu -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21108
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1314.527 ; gain = 539.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_ready', assumed default net type 'wire' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:327]
+WARNING: [Synth 8-6901] identifier 'id_opcode' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:53]
+WARNING: [Synth 8-6901] identifier 'id_ir' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:53]
+WARNING: [Synth 8-6901] identifier 'ex_mem_read' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'ex_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'ex_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'ex_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'mem_reg_write' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:189]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:189]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:189]
+WARNING: [Synth 8-6901] identifier 'wb_reg_write' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:191]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:191]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:191]
+WARNING: [Synth 8-6901] identifier 'mem_reg_write' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:195]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:195]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:195]
+WARNING: [Synth 8-6901] identifier 'wb_reg_write' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:197]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:197]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:197]
+WARNING: [Synth 8-6901] identifier 'mem_alu_result' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:208]
+WARNING: [Synth 8-6901] identifier 'mem_alu_result' is used before its declaration [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:215]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_mcu' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_mcu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/timer.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/timer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_cpu' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:3]
+INFO: [Synth 8-3876] $readmem data file 'main.mem' is read successfully [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:342]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:105]
+INFO: [Synth 8-226] default block is never used [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:224]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/register_file.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/register_file.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/Alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/Alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:1]
+WARNING: [Synth 8-7071] port 'rx_data' of module 'uart_top' is unconnected for instance 'u_uart' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:322]
+WARNING: [Synth 8-7071] port 'rx_valid' of module 'uart_top' is unconnected for instance 'u_uart' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:322]
+WARNING: [Synth 8-7071] port 'uart_rx' of module 'uart_top' is unconnected for instance 'u_uart' [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:322]
+WARNING: [Synth 8-7023] instance 'u_uart' of module 'uart_top' has 9 connections declared, but only 6 given [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:322]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_cpu' (0#1) [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_mcu' (0#1) [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_mcu.v:1]
+WARNING: [Synth 8-7137] Register tx_data_buffer_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:42]
+WARNING: [Synth 8-7137] Register tx_clk_count_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:45]
+WARNING: [Synth 8-7137] Register tx_bit_index_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:54]
+WARNING: [Synth 8-7137] Register rx_clk_count_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:97]
+WARNING: [Synth 8-7137] Register rx_bit_index_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:106]
+WARNING: [Synth 8-7137] Register rx_data_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/new/uart.v:119]
+WARNING: [Synth 8-6014] Unused sequential element mepc_reg was removed.  [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/sources_1/imports/Vivado/rv32e_cpu.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1439.988 ; gain = 664.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1439.988 ; gain = 664.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1439.988 ; gain = 664.824
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1439.988 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rv32e_mcu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rv32e_mcu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1498.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1498.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1498.188 ; gain = 723.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1498.188 ; gain = 723.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1498.188 ; gain = 723.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'uart_top'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_START |                               01 |                               01
+              STATE_DATA |                               10 |                               10
+              STATE_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'uart_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_START |                               01 |                               01
+              STATE_DATA |                               10 |                               10
+              STATE_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'uart_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1498.188 ; gain = 723.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 29    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---RAMs : 
+	               8K Bit	(256 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 15    
+	   3 Input   32 Bit        Muxes := 2     
+	 257 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 22    
+	   4 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_rx_state_reg[1]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_rx_state_reg[0]) is unused and will be removed from module uart_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1574.605 ; gain = 799.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------+-----------+----------------------+-----------------+
+|cpu0        | RAM_reg    | Implied   | 256 x 32             | RAM256X1S x 32  | 
++------------+------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1652.070 ; gain = 876.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1780.594 ; gain = 1005.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------+-----------+----------------------+-----------------+
+|cpu0        | RAM_reg    | Implied   | 256 x 32             | RAM256X1S x 32  | 
++------------+------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1780.594 ; gain = 1005.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |    34|
+|3     |LUT1      |     4|
+|4     |LUT2      |    58|
+|5     |LUT3      |   118|
+|6     |LUT4      |    81|
+|7     |LUT5      |   203|
+|8     |LUT6      |   448|
+|9     |MUXF7     |   128|
+|10    |MUXF8     |    64|
+|11    |RAM256X1S |    32|
+|12    |FDCE      |   700|
+|13    |FDPE      |     1|
+|14    |FDRE      |   194|
+|15    |IBUF      |     3|
+|16    |OBUF      |     9|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 1963.594 ; gain = 1130.230
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1963.594 ; gain = 1188.430
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1972.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1976.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+
+Synth Design complete | Checksum: 9cbf9bcf
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:38 . Memory (MB): peak = 1976.434 ; gain = 1437.371
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1976.434 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.runs/synth_1/rv32e_mcu.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file rv32e_mcu_utilization_synth.rpt -pb rv32e_mcu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 13:31:50 2026...

@@ -1,0 +1,1539 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 17 12:57:23 2026
+# Process ID: 8248
+# Current directory: C:/Users/Admin/Desktop/da1/rv32e
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9636 C:\Users\Admin\Desktop\da1\rv32e\rv32e.xpr
+# Log file: C:/Users/Admin/Desktop/da1/rv32e/vivado.log
+# Journal file: C:/Users/Admin/Desktop/da1/rv32e\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/da1/rv32e/rv32e.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 682.902 ; gain = 95.816
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:00:08 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jun 17 13:01:04 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:02:43 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jun 17 13:04:21 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+set_property top rv32e_mcu [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:06:10 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jun 17 13:07:02 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.296 . Memory (MB): peak = 1065.363 ; gain = 0.969
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 1065.363 ; gain = 0.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1065.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1193.008 ; gain = 423.137
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_clock_utilization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 17 13:10:10 2026
+| Host         : Toan running 64-bit major release  (build 9200)
+| Command      : report_clock_utilization
+| Design       : rv32e_mcu
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Clock Regions: Key Resource Utilization
+5. Clock Regions : Global Clock Summary
+6. Device Cell Placement Summary for Global Clock g0
+7. Clock Region Cell Placement per Global Clock: Region X0Y0
+
+1. Clock Primitive Utilization
+------------------------------
+
++----------+------+-----------+-----+--------------+--------+
+| Type     | Used | Available | LOC | Clock Region | Pblock |
++----------+------+-----------+-----+--------------+--------+
+| BUFGCTRL |    1 |        32 |   0 |            0 |      0 |
+| BUFH     |    0 |        72 |   0 |            0 |      0 |
+| BUFIO    |    0 |        16 |   0 |            0 |      0 |
+| BUFMR    |    0 |         8 |   0 |            0 |      0 |
+| BUFR     |    0 |        16 |   0 |            0 |      0 |
+| MMCM     |    0 |         4 |   0 |            0 |      0 |
+| PLL      |    0 |         4 |   0 |            0 |      0 |
++----------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------+----------------------+---------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin           | Net           |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------+----------------------+---------------+
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 1 |         175 |               0 |              |       | clk_IBUF_BUFG_inst/O | clk_IBUF_BUFG |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------+----------------------+---------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+-----------------+------------+-----------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site      | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin      | Net      |
++-----------+-----------+-----------------+------------+-----------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
+| src0      | g0        | IBUF/O          | None       | IOB_X0Y28 | X0Y0         |           1 |               0 |                     |              | clk_IBUF_inst/O | clk_IBUF |
++-----------+-----------+-----------------+------------+-----------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+4. Clock Regions: Key Resource Utilization
+------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E2   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  143 |  2500 |   24 |  1000 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  3200 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+5. Clock Regions : Global Clock Summary
+---------------------------------------
+
+All Modules
++----+----+----+
+|    | X0 | X1 |
++----+----+----+
+| Y2 |  0 |  0 |
+| Y1 |  0 |  0 |
+| Y0 |  1 |  0 |
++----+----+----+
+
+
+6. Device Cell Placement Summary for Global Clock g0
+----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
+| g0        | BUFG/O          | n/a               |       |             |               |         143 |        0 |              0 |        0 | clk_IBUF_BUFG |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+----+
+|    | X0   | X1 |
++----+------+----+
+| Y2 |    0 |  0 |
+| Y1 |    0 |  0 |
+| Y0 |  143 |  0 |
++----+------+----+
+
+
+7. Clock Region Cell Placement per Global Clock: Region X0Y0
+------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
+| g0        | n/a   | BUFG/O          | None       |         143 |               0 | 143 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y0 [get_cells clk_IBUF_BUFG_inst]
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X0Y28 [get_ports clk]
+
+# Clock net "clk_IBUF_BUFG" driven by instance "clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_clk_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_clk_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_clk_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+report_utilization
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 17 13:10:26 2026
+| Host         : Toan running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : rv32e_mcu
+| Device       : 7z020clg484-1
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs                 |  322 |     0 |     53200 |  0.61 |
+|   LUT as Logic             |  194 |     0 |     53200 |  0.36 |
+|   LUT as Memory            |  128 |     0 |     17400 |  0.74 |
+|     LUT as Distributed RAM |  128 |     0 |           |       |
+|     LUT as Shift Register  |    0 |     0 |           |       |
+| Slice Registers            |  143 |     0 |    106400 |  0.13 |
+|   Register as Flip Flop    |  143 |     0 |    106400 |  0.13 |
+|   Register as Latch        |    0 |     0 |    106400 |  0.00 |
+| F7 Muxes                   |   64 |     0 |     26600 |  0.24 |
+| F8 Muxes                   |   32 |     0 |     13300 |  0.24 |
++----------------------------+------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 1     |          Yes |         Set |            - |
+| 142   |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------------------------+------+-------+-----------+-------+
+|                  Site Type                 | Used | Fixed | Available | Util% |
++--------------------------------------------+------+-------+-----------+-------+
+| Slice                                      |  110 |     0 |     13300 |  0.83 |
+|   SLICEL                                   |   56 |     0 |           |       |
+|   SLICEM                                   |   54 |     0 |           |       |
+| LUT as Logic                               |  194 |     0 |     53200 |  0.36 |
+|   using O5 output only                     |    0 |       |           |       |
+|   using O6 output only                     |  159 |       |           |       |
+|   using O5 and O6                          |   35 |       |           |       |
+| LUT as Memory                              |  128 |     0 |     17400 |  0.74 |
+|   LUT as Distributed RAM                   |  128 |     0 |           |       |
+|     using O5 output only                   |    0 |       |           |       |
+|     using O6 output only                   |  128 |       |           |       |
+|     using O5 and O6                        |    0 |       |           |       |
+|   LUT as Shift Register                    |    0 |     0 |           |       |
+| Slice Registers                            |  143 |     0 |    106400 |  0.13 |
+|   Register driven from within the Slice    |   59 |       |           |       |
+|   Register driven from outside the Slice   |   84 |       |           |       |
+|     LUT in front of the register is unused |   14 |       |           |       |
+|     LUT in front of the register is used   |   70 |       |           |       |
+| Unique Control Sets                        |    7 |       |     13300 |  0.05 |
++--------------------------------------------+------+-------+-----------+-------+
+* Note: Available Control Sets calculated as Slice Registers / 8, Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       140 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       140 |  0.00 |
+|   RAMB18       |    0 |     0 |       280 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       220 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |   10 |     0 |       200 |  5.00 |
+|   IOB Master Pads           |    5 |       |           |       |
+|   IOB Slave Pads            |    4 |       |           |       |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |  0.00 |
+| IBUFDS                      |    0 |     0 |       192 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
+| ILOGIC                      |    0 |     0 |       200 |  0.00 |
+| OLOGIC                      |    0 |     0 |       200 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFIO      |    0 |     0 |        16 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         4 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |        16 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     |  142 |        Flop & Latch |
+| RAMS64E  |  128 |  Distributed Memory |
+| LUT6     |   83 |                 LUT |
+| MUXF7    |   64 |               MuxFx |
+| LUT5     |   51 |                 LUT |
+| LUT4     |   41 |                 LUT |
+| MUXF8    |   32 |               MuxFx |
+| LUT2     |   32 |                 LUT |
+| CARRY4   |   25 |          CarryLogic |
+| LUT3     |   20 |                 LUT |
+| OBUF     |    8 |                  IO |
+| LUT1     |    2 |                 LUT |
+| IBUF     |    2 |                  IO |
+| FDSE     |    1 |        Flop & Latch |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+report_power
+Command: report_power
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Wed Jun 17 13:11:02 2026
+| Host             : Toan running 64-bit major release  (build 9200)
+| Command          : report_power
+| Design           : rv32e_mcu
+| Device           : xc7z020clg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.605        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.493        |
+| Device Static (W)        | 0.112        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 78.0         |
+| Junction Temperature (C) | 32.0         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |     0.199 |      628 |       --- |             --- |
+|   LUT as Logic           |     0.153 |      196 |     53200 |            0.37 |
+|   CARRY4                 |     0.040 |       25 |     13300 |            0.19 |
+|   BUFG                   |     0.006 |        1 |        32 |            3.13 |
+|   Register               |    <0.001 |      143 |    106400 |            0.13 |
+|   LUT as Distributed RAM |    <0.001 |      128 |     17400 |            0.74 |
+|   F7/F8 Muxes            |    <0.001 |       96 |     53200 |            0.18 |
+|   Others                 |     0.000 |        6 |       --- |             --- |
+| Signals                  |     0.260 |      396 |       --- |             --- |
+| I/O                      |     0.034 |       10 |       200 |            5.00 |
+| Static Power             |     0.112 |          |           |                 |
+| Total                    |     0.605 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.476 |       0.467 |      0.009 |
+| Vccaux    |       1.800 |     0.014 |       0.002 |      0.012 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.013 |       0.012 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.020 |       0.000 |      0.020 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------+-----------+
+| Name      | Power (W) |
++-----------+-----------+
+| rv32e_mcu |     0.493 |
+|   cpu0    |     0.410 |
+|     alu0  |     0.083 |
+|     rf    |     0.239 |
+|   t0      |     0.018 |
++-----------+-----------+
+
+
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: rv32e_mcu
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1894.359 ; gain = 79.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rv32e_mcu' [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/Admin/Desktop/da1/timer.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (1#1) [C:/Users/Admin/Desktop/da1/timer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_cpu' [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Admin/Desktop/da1/firmware/main.mem' is read successfully [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:168]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Admin/Desktop/da1/register_file.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (2#1) [C:/Users/Admin/Desktop/da1/register_file.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Admin/Desktop/da1/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (3#1) [C:/Users/Admin/Desktop/da1/alu.v:2]
+WARNING: [Synth 8-6014] Unused sequential element mepc_reg was removed.  [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_cpu' (4#1) [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_mcu' (5#1) [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1929.984 ; gain = 114.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1930.246 ; gain = 114.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1930.246 ; gain = 114.969
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2079.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2109.453 ; gain = 294.176
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2109.453 ; gain = 294.176
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2296.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2377.105 ; gain = 161.691
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim/tb_rv32e_mcu_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim/tb_rv32e_mcu_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim/tb_rv32e_mcu_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_mcu
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_rv32e_mcu_func_synth xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.FDSE(INIT=1'b0)
+Compiling module unisims_ver.RAM256X1S(IS_WCLK_INVERTED=1'b1)
+Compiling module xil_defaultlib.alu
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.rv32e_cpu
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.rv32e_mcu
+Compiling module xil_defaultlib.tb_rv32e_mcu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rv32e_mcu_func_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim/xsim.dir/tb_rv32e_mcu_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 17 13:19:47 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2377.105 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rv32e_mcu_func_synth -key {Post-Synthesis:sim_1:Functional:tb_rv32e_mcu} -tclbatch {tb_rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/RAM was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/opcode was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs1 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs2 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rd was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/alu0/result was not found in the design.
+source tb_rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[TESTBENCH START] Ti?n hành ch?y chu?i t?p l?nh R, I, S, B...
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2391.668 ; gain = 14.562
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rv32e_mcu_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2391.668 ; gain = 176.254
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim/tb_rv32e_mcu_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim/tb_rv32e_mcu_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim/tb_rv32e_mcu_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim/tb_rv32e_mcu_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim/tb_rv32e_mcu_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM256X1S_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD32
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD33
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD34
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD35
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD36
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD37
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD38
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD39
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD40
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD41
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD42
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD43
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD44
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD45
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD46
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD47
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD48
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD49
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD50
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD51
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD52
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD53
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD54
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD55
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD56
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD57
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD58
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD59
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD60
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD61
+INFO: [VRFC 10-311] analyzing module RAM256X1S_HD62
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_mcu
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_rv32e_mcu_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_rv32e_mcu_time_synth.sdf", for root module "tb_rv32e_mcu/uut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_rv32e_mcu_time_synth.sdf", for root module "tb_rv32e_mcu/uut".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDSE(INIT=1'b0)
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.MUXF8
+Compiling module simprims_ver.RAMS64E(IS_CLK_INVERTED=1'b1,RAM...
+Compiling module simprims_ver.RAMS64E(IS_CLK_INVERTED=1'b1,RAM...
+Compiling module simprims_ver.RAMS64E(IS_CLK_INVERTED=1'b1,RAM...
+Compiling module simprims_ver.RAMS64E(IS_CLK_INVERTED=1'b1)
+Compiling module xil_defaultlib.RAM256X1S_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM256X1S_HD32
+Compiling module xil_defaultlib.RAM256X1S_HD33
+Compiling module xil_defaultlib.RAM256X1S_HD34
+Compiling module xil_defaultlib.RAM256X1S_HD35
+Compiling module xil_defaultlib.RAM256X1S_HD36
+Compiling module xil_defaultlib.RAM256X1S_HD37
+Compiling module xil_defaultlib.RAM256X1S_HD38
+Compiling module xil_defaultlib.RAM256X1S_HD39
+Compiling module xil_defaultlib.RAM256X1S_HD40
+Compiling module xil_defaultlib.RAM256X1S_HD41
+Compiling module xil_defaultlib.RAM256X1S_HD42
+Compiling module xil_defaultlib.RAM256X1S_HD43
+Compiling module xil_defaultlib.RAM256X1S_HD44
+Compiling module xil_defaultlib.RAM256X1S_HD45
+Compiling module xil_defaultlib.RAM256X1S_HD46
+Compiling module xil_defaultlib.RAM256X1S_HD47
+Compiling module xil_defaultlib.RAM256X1S_HD48
+Compiling module xil_defaultlib.RAM256X1S_HD49
+Compiling module xil_defaultlib.RAM256X1S_HD50
+Compiling module xil_defaultlib.RAM256X1S_HD51
+Compiling module xil_defaultlib.RAM256X1S_HD52
+Compiling module xil_defaultlib.RAM256X1S_HD53
+Compiling module xil_defaultlib.RAM256X1S_HD54
+Compiling module xil_defaultlib.RAM256X1S_HD55
+Compiling module xil_defaultlib.RAM256X1S_HD56
+Compiling module xil_defaultlib.RAM256X1S_HD57
+Compiling module xil_defaultlib.RAM256X1S_HD58
+Compiling module xil_defaultlib.RAM256X1S_HD59
+Compiling module xil_defaultlib.RAM256X1S_HD60
+Compiling module xil_defaultlib.RAM256X1S_HD61
+Compiling module xil_defaultlib.RAM256X1S_HD62
+Compiling module xil_defaultlib.alu
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.rv32e_cpu
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.rv32e_mcu
+Compiling module xil_defaultlib.tb_rv32e_mcu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rv32e_mcu_time_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim/xsim.dir/tb_rv32e_mcu_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 17 13:21:14 2026...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 2403.828 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rv32e_mcu_time_synth -key {Post-Synthesis:sim_1:Timing:tb_rv32e_mcu} -tclbatch {tb_rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/RAM was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/opcode was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs1 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs2 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rd was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/alu0/result was not found in the design.
+source tb_rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[TESTBENCH START] Ti?n hành ch?y chu?i t?p l?nh R, I, S, B...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rv32e_mcu_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 2403.828 ; gain = 7.605
+set_property top tb_rv32e_mcu [current_fileset]
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_mcu_behav xil_defaultlib.tb_rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rv32e_mcu_behav -key {Behavioral:sim_1:Functional:tb_rv32e_mcu} -tclbatch {tb_rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+source tb_rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[TESTBENCH START] Ti?n hành ch?y chu?i t?p l?nh R, I, S, B...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rv32e_mcu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2410.902 ; gain = 4.016
+file mkdir C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/constrs_1
+file mkdir C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/constrs_1/new
+close [ open C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/constrs_1/new/pins.xdc w ]
+add_files -fileset constrs_1 C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/constrs_1/new/pins.xdc
+file mkdir C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new
+close [ open C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v w ]
+add_files C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_design rtl_1
+set_property top rv32e_mcu [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:32:55 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:38:20 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:40:14 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Jun 17 13:42:17 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.347 . Memory (MB): peak = 3054.137 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.347 . Memory (MB): peak = 3054.137 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 3326.410 ; gain = 407.156
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:54:33 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 17 13:57:06 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Jun 17 13:59:05 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/Desktop/da1/rv32e/rv32e.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.303 . Memory (MB): peak = 3344.262 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.304 . Memory (MB): peak = 3344.262 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 3344.262 ; gain = 10.668
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property top rv32e_cpu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top rv32e_cpu_tb [current_fileset]
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rv32e_cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rv32e_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:48]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:137]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:176]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:178]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:182]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:184]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:202]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rv32e_cpu_tb_behav xil_defaultlib.rv32e_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:94]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:95]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:96]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:97]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:98]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:99]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rv32e_cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rv32e_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:48]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:137]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:176]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:178]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:182]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:184]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:202]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rv32e_cpu_tb_behav xil_defaultlib.rv32e_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:94]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:95]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:96]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:97]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:98]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:99]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+set_property top tb_rv32e_cpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:48]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:137]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:176]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:178]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:182]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:184]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:202]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rv32e_cpu
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_cpu_behav xil_defaultlib.tb_rv32e_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:47]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:48]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:49]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:80]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:81]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:82]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rv32e_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rv32e_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_cpu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx_ready, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:313]
+WARNING: [VRFC 10-3380] identifier 'id_opcode' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:48]
+WARNING: [VRFC 10-3380] identifier 'ex_mem_read' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:137]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:176]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:178]
+WARNING: [VRFC 10-3380] identifier 'mem_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:182]
+WARNING: [VRFC 10-3380] identifier 'wb_reg_write' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:184]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_alu_result' is used before its declaration [C:/Users/Admin/Desktop/da1/rv32e_cpu.v:202]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32e_mcu
+INFO: [VRFC 10-2458] undeclared symbol uart_tx, assumed default net type wire [C:/Users/Admin/Desktop/da1/rv32e_mcu.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rv32e_cpu_behav xil_defaultlib.tb_rv32e_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:47]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:48]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:49]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:80]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:81]
+ERROR: [VRFC 10-2991] 'regs' is not declared under prefix 'rf' [C:/Users/Admin/Desktop/da1/rv32e/rv32e.srcs/sim_1/new/tb_rv32e_mcu.v:82]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3344.262 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rv32e_mcu_behav xil_defaultlib.rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.rv32e_cpu
+Compiling module xil_defaultlib.rv32e_mcu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rv32e_mcu_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim/xsim.dir/rv32e_mcu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 17 14:17:55 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rv32e_mcu_behav -key {Behavioral:sim_1:Functional:rv32e_mcu} -tclbatch {rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+WARNING: Simulation object /tb_rv32e_mcu/clk was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/external_irq was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/RAM was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/PC was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/opcode was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs1 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs2 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rd was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/regB was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/alu0/result was not found in the design.
+source rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rv32e_mcu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3344.262 ; gain = 0.000
+run all
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rv32e_mcu_behav xil_defaultlib.rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 3344.262 ; gain = 0.000
+set_property top tb [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rv32e_mcu_behav xil_defaultlib.rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rv32e_mcu_behav -key {Behavioral:sim_1:Functional:rv32e_mcu} -tclbatch {rv32e_mcu.tcl} -view {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+WARNING: Simulation object /tb_rv32e_mcu/clk was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/external_irq was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/RAM was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/PC was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/opcode was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs1 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rs2 was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/rd was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/regB was not found in the design.
+WARNING: Simulation object /tb_rv32e_mcu/uut/cpu0/alu0/result was not found in the design.
+source rv32e_mcu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rv32e_mcu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3344.262 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rv32e_mcu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rv32e_mcu_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e00b6e5658345398f2f609d39f0bd33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rv32e_mcu_behav xil_defaultlib.rv32e_mcu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3344.262 ; gain = 0.000
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:24 ; elapsed = 00:05:54 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:24 ; elapsed = 00:05:54 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:14 ; elapsed = 00:06:46 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:06:46 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Desktop/da1/rv32e/rv32e.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:42 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:42 . Memory (MB): peak = 3344.262 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3344.262 ; gain = 0.000
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 3344.262 ; gain = 0.000
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 3344.262 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 17 14:41:25 2026...

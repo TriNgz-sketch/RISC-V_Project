@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Jul  6 20:30:18 2026
+# Process ID         : 16212
+# Current directory  : C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.runs/design_1_rv32e_axi_ip_0_1_synth_1
+# Command line       : vivado.exe -log design_1_rv32e_axi_ip_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rv32e_axi_ip_0_1.tcl
+# Log file           : C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.runs/design_1_rv32e_axi_ip_0_1_synth_1/design_1_rv32e_axi_ip_0_1.vds
+# Journal file       : C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.runs/design_1_rv32e_axi_ip_0_1_synth_1\vivado.jou
+# Running On         : TriNguyen
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7535HS with Radeon Graphics        
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16329 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29214 MB
+# Available Virtual  : 6637 MB
+#-----------------------------------------------------------
+source design_1_rv32e_axi_ip_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 531.996 ; gain = 220.285
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Nguye/Downloads/Vivado/rv32e/ip_repo/rv32e_axi_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: synth_design -top design_1_rv32e_axi_ip_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4496
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.035 ; gain = 540.199
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'core_leds' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:303]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_ready', assumed default net type 'wire' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:327]
+WARNING: [Synth 8-6901] identifier 'id_opcode' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:53]
+WARNING: [Synth 8-6901] identifier 'id_ir' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:53]
+WARNING: [Synth 8-6901] identifier 'ex_mem_read' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'ex_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'ex_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'ex_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:145]
+WARNING: [Synth 8-6901] identifier 'mem_reg_write' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:189]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:189]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:189]
+WARNING: [Synth 8-6901] identifier 'wb_reg_write' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:191]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:191]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:191]
+WARNING: [Synth 8-6901] identifier 'mem_reg_write' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:195]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:195]
+WARNING: [Synth 8-6901] identifier 'mem_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:195]
+WARNING: [Synth 8-6901] identifier 'wb_reg_write' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:197]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:197]
+WARNING: [Synth 8-6901] identifier 'wb_rd' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:197]
+WARNING: [Synth 8-6901] identifier 'mem_alu_result' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:208]
+WARNING: [Synth 8-6901] identifier 'mem_alu_result' is used before its declaration [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:215]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rv32e_axi_ip_0_1' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ip/design_1_rv32e_axi_ip_0_1/synth/design_1_rv32e_axi_ip_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_axi_ip' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_axi_ip_slave_lite_v1_0_S00_AXI' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:141]
+INFO: [Synth 8-226] default block is never used [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:268]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_mcu' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_mcu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timer' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/timer.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/timer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rv32e_cpu' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:3]
+INFO: [Synth 8-3876] $readmem data file 'main.mem' is read successfully [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:342]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:105]
+INFO: [Synth 8-226] default block is never used [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:224]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/register_file.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/register_file.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/Alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/Alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:1]
+WARNING: [Synth 8-7071] port 'rx_data' of module 'uart_top' is unconnected for instance 'u_uart' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:322]
+WARNING: [Synth 8-7071] port 'rx_valid' of module 'uart_top' is unconnected for instance 'u_uart' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:322]
+WARNING: [Synth 8-7071] port 'uart_rx' of module 'uart_top' is unconnected for instance 'u_uart' [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:322]
+WARNING: [Synth 8-7023] instance 'u_uart' of module 'uart_top' has 9 connections declared, but only 6 given [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:322]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_cpu' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_mcu' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_mcu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_axi_ip_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rv32e_axi_ip' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rv32e_axi_ip_0_1' (0#1) [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ip/design_1_rv32e_axi_ip_0_1/synth/design_1_rv32e_axi_ip_0_1.v:53]
+WARNING: [Synth 8-7137] Register tx_data_buffer_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:42]
+WARNING: [Synth 8-7137] Register tx_clk_count_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:45]
+WARNING: [Synth 8-7137] Register tx_bit_index_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:54]
+WARNING: [Synth 8-7137] Register rx_clk_count_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:97]
+WARNING: [Synth 8-7137] Register rx_bit_index_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:106]
+WARNING: [Synth 8-7137] Register rx_data_reg in module uart_top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/uart.v:119]
+WARNING: [Synth 8-6014] Unused sequential element mepc_reg was removed.  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_cpu.v:46]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.gen/sources_1/bd/design_1/ipshared/7e64/hdl/rv32e_axi_ip_slave_lite_v1_0_S00_AXI.v:208]
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[2] in module rv32e_axi_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[1] in module rv32e_axi_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[0] in module rv32e_axi_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[2] in module rv32e_axi_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[1] in module rv32e_axi_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[0] in module rv32e_axi_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1444.484 ; gain = 667.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1444.484 ; gain = 667.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1444.484 ; gain = 667.648
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1444.484 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1523.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1523.203 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1523.203 ; gain = 746.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1523.203 ; gain = 746.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1523.203 ; gain = 746.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'uart_top'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart_top'
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'rv32e_axi_ip_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'rv32e_axi_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_START |                               01 |                               01
+              STATE_DATA |                               10 |                               10
+              STATE_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'uart_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_START |                               01 |                               01
+              STATE_DATA |                               10 |                               10
+              STATE_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'uart_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'rv32e_axi_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'rv32e_axi_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1523.203 ; gain = 746.367
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---RAMs : 
+	               8K Bit	(256 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 14    
+	   3 Input   32 Bit        Muxes := 3     
+	 257 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 9     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 22    
+	   4 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_rv32e_axi_ip_0_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_rv32e_axi_ip_0_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_rv32e_axi_ip_0_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_rv32e_axi_ip_0_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_rv32e_axi_ip_0_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_rv32e_axi_ip_0_1 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_rx_state_reg[1]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_rx_state_reg[0]) is unused and will be removed from module uart_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1568.875 ; gain = 792.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------------------------------------------------------------+------------+-----------+----------------------+-----------------+
+|Module Name                                                        | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++-------------------------------------------------------------------+------------+-----------+----------------------+-----------------+
+|\inst/rv32e_axi_ip_slave_lite_v1_0_S00_AXI_inst/my_riscv_mcu/cpu0  | RAM_reg    | Implied   | 256 x 32             | RAM256X1S x 32  | 
++-------------------------------------------------------------------+------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1568.875 ; gain = 792.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------------------------------------------------------------+------------+-----------+----------------------+-----------------+
+|Module Name                                                        | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++-------------------------------------------------------------------+------------+-----------+----------------------+-----------------+
+|\inst/rv32e_axi_ip_slave_lite_v1_0_S00_AXI_inst/my_riscv_mcu/cpu0  | RAM_reg    | Implied   | 256 x 32             | RAM256X1S x 32  | 
++-------------------------------------------------------------------+------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1568.875 ; gain = 792.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    34|
+|2     |LUT1      |     3|
+|3     |LUT2      |    21|
+|4     |LUT3      |   122|
+|5     |LUT4      |    57|
+|6     |LUT5      |   246|
+|7     |LUT6      |   401|
+|8     |MUXF7     |   128|
+|9     |RAM256X1S |    32|
+|10    |FDCE      |   481|
+|11    |FDRE      |   522|
+|12    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1744.410 ; gain = 888.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.410 ; gain = 967.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1756.434 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1853.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+
+Synth Design complete | Checksum: 71932495
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1853.027 ; gain = 1301.348
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1853.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.runs/design_1_rv32e_axi_ip_0_1_synth_1/design_1_rv32e_axi_ip_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_rv32e_axi_ip_0_1, cache-ID = 9473655d19da186f
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1853.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Nguye/Downloads/Vivado/rv32e/rv32e/rv32e.runs/design_1_rv32e_axi_ip_0_1_synth_1/design_1_rv32e_axi_ip_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_rv32e_axi_ip_0_1_utilization_synth.rpt -pb design_1_rv32e_axi_ip_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 20:31:03 2026...

@@ -1,0 +1,105 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Jul 14 13:37:05 2026
+| Host         : TriNguyen running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file rv32e_mcu_control_sets_placed.rpt
+| Design       : rv32e_mcu
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    23 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            5 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |             168 |           49 |
+| Yes          | No                    | No                     |               8 |            2 |
+| Yes          | No                    | Yes                    |             707 |          338 |
+| Yes          | Yes                   | No                     |              10 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+-------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal         |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------+-------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                               | cpu0/rf/rst_n                 |                1 |              1 |         1.00 |
+|  clk_div_BUFG  |                               |                               |                5 |              8 |         1.60 |
+|  clk_div_BUFG  | cpu0/u_uart/tx_data_buffer[0] |                               |                2 |              8 |         4.00 |
+|  clk_div_BUFG  | cpu0/u_uart/tx_clk_count[0]   | cpu0/u_uart/tx_data_buffer[0] |                3 |             10 |         3.33 |
+|  clk_div_BUFG  | cpu0/ex_imm_i[0]              | cpu0/rf/rst_n                 |                5 |             18 |         3.60 |
+|  clk_div_BUFG  |                               | t0/irq_i_1_n_0                |                7 |             27 |         3.86 |
+|  clk_div_BUFG  |                               | cpu0/wb_read_data[31]_i_1_n_0 |               12 |             31 |         2.58 |
+|  clk_div_BUFG  | cpu0/PC[31]_i_1_n_0           | cpu0/rf/rst_n                 |                8 |             31 |         3.88 |
+|  clk_div_BUFG  | cpu0/rf/R[15][31]_i_1_n_0     | cpu0/rf/rst_n                 |               16 |             32 |         2.00 |
+|  clk_div_BUFG  | cpu0/rf/R[3][31]_i_1_n_0      | cpu0/rf/rst_n                 |               15 |             32 |         2.13 |
+|  clk_div_BUFG  | cpu0/rf/R[5][31]_i_1_n_0      | cpu0/rf/rst_n                 |               18 |             32 |         1.78 |
+|  clk_div_BUFG  | cpu0/rf/R[7][31]_i_1_n_0      | cpu0/rf/rst_n                 |               13 |             32 |         2.46 |
+|  clk_div_BUFG  | cpu0/rf/R[9][31]_i_1_n_0      | cpu0/rf/rst_n                 |               25 |             32 |         1.28 |
+|  clk_div_BUFG  | cpu0/rf/R[2][31]_i_1_n_0      | cpu0/rf/rst_n                 |               13 |             32 |         2.46 |
+|  clk_div_BUFG  | cpu0/rf/R[13][31]_i_1_n_0     | cpu0/rf/rst_n                 |               15 |             32 |         2.13 |
+|  clk_div_BUFG  | cpu0/rf/R[12][31]_i_1_n_0     | cpu0/rf/rst_n                 |               17 |             32 |         1.88 |
+|  clk_div_BUFG  | cpu0/rf/R[10][31]_i_1_n_0     | cpu0/rf/rst_n                 |               26 |             32 |         1.23 |
+|  clk_div_BUFG  | cpu0/rf/R[11][31]_i_1_n_0     | cpu0/rf/rst_n                 |               16 |             32 |         2.00 |
+|  clk_div_BUFG  | cpu0/rf/R[14][31]_i_1_n_0     | cpu0/rf/rst_n                 |               10 |             32 |         3.20 |
+|  clk_div_BUFG  | cpu0/rf/R[4][31]_i_1_n_0      | cpu0/rf/rst_n                 |               23 |             32 |         1.39 |
+|  clk_div_BUFG  | cpu0/rf/R[6][31]_i_1_n_0      | cpu0/rf/rst_n                 |               18 |             32 |         1.78 |
+|  clk_div_BUFG  | cpu0/rf/R[8][31]_i_1_n_0      | cpu0/rf/rst_n                 |               19 |             32 |         1.68 |
+|  clk_div_BUFG  | cpu0/rf/R[1][31]_i_1_n_0      | cpu0/rf/rst_n                 |               22 |             40 |         1.82 |
+|  clk_div_BUFG  | cpu0/id_ir[31]_i_1_n_0        | cpu0/rf/rst_n                 |               15 |             52 |         3.47 |
+|  clk_div_BUFG  |                               | cpu0/rf/rst_n                 |               31 |            111 |         3.58 |
+|  clk_div_BUFG  | cpu0/ex_opcode[0]             | cpu0/rf/rst_n                 |               44 |            118 |         2.68 |
+| ~clk_div_BUFG  | cpu0/p_0_in20_out             |                               |               32 |            128 |         4.00 |
++----------------+-------------------------------+-------------------------------+------------------+----------------+--------------+
+
+

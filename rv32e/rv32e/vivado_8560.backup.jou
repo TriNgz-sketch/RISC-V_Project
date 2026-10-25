@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 17 15:18:20 2026
+# Process ID: 8560
+# Current directory: C:/Users/Admin/Desktop/da1/rv32e
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10888 C:\Users\Admin\Desktop\da1\rv32e\rv32e.xpr
+# Log file: C:/Users/Admin/Desktop/da1/rv32e/vivado.log
+# Journal file: C:/Users/Admin/Desktop/da1/rv32e\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/da1/rv32e/rv32e.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+source tb_rv32e_mcu.tcl
+relaunch_sim
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg
+source tb_rv32e_mcu.tcl
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+report_utilization
+Register Optimization
+close_design
+synth_design -rtl -name rtl_1
+ipx::package_project -root_dir c:/users/admin/desktop/rv32e_ip -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/users/admin/desktop/rv32e_ip/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/admin/desktop/rv32e_ip c:/users/admin/desktop/rv32e_ip/component.xml
+update_compile_order -fileset sources_1
+current_project rv32e
+current_project tmp_edit_project
+close_project
+save_wave_config {C:/Users/Admin/Desktop/da1/rv32e/tb_rv32e_mcu_behav.wcfg}
+close_sim
