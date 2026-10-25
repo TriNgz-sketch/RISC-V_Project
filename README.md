@@ -23,4 +23,4 @@ RISC-V_Project/
 ├── sim/                # Chứa các file Testbench và file mã máy (.hex) để mô phỏng
 ├── bitstream/          # File .bit đã được tổng hợp để nạp xuống board PYNQ-Z2
 ├── docs/               # Chứa tài liệu báo cáo đồ án
-└── README.md           # File mô tả dự án
+
